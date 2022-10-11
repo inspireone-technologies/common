@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.1.14...v1.2.0) (2022-10-11)
+
+
+### Features
+
+* **logger:** exported logger as named export ([3eb3da9](https://github.com/saurabhrkp-inspireOne/common/commit/3eb3da9bf6bd5c8168416b3ed4d52b7d5e4c2ab1))
+
 ### [1.1.14](https://github.com/saurabhrkp-inspireOne/common/compare/v1.1.13...v1.1.14) (2022-10-11)
 
 ### [1.1.13](https://github.com/saurabhrkp-inspireOne/common/compare/v1.1.12...v1.1.13) (2022-10-11)
