@@ -1,3 +1,5 @@
+import { Response } from 'express';
+
 // Helper code for the API consumer to understand the error and handle is accordingly
 export const StatusCode = {
 	SUCCESS: '10000',
@@ -17,48 +19,48 @@ export const ResponseStatus = {
 	INTERNAL_ERROR: 500
 };
 
-export const authFailureResponse = (res, errors = [{ message: 'Authentication Failure' }]) => {
+export const authFailureResponse = (res: Response, errors = [{ message: 'Authentication Failure' }]) => {
 	return res.status(ResponseStatus.UNAUTHORIZED).json({ statusCode: StatusCode.FAILURE, errors });
 };
 
-export const notFoundResponse = (res, errors = [{ message: 'Not Found' }]) => {
+export const notFoundResponse = (res: Response, errors = [{ message: 'Not Found' }]) => {
 	const url = res.req.originalUrl;
 	return res.status(ResponseStatus.NOT_FOUND).json({ statusCode: StatusCode.FAILURE, errors, url });
 };
 
-export const forbiddenResponse = (res, errors = [{ message: 'Forbidden' }]) => {
+export const forbiddenResponse = (res: Response, errors = [{ message: 'Forbidden' }]) => {
 	return res.status(ResponseStatus.FORBIDDEN).json({ statusCode: StatusCode.FAILURE, errors });
 };
 
-export const badRequestResponse = (res, errors = [{ message: 'Bad Parameters' }]) => {
+export const badRequestResponse = (res: Response, errors = [{ message: 'Bad Parameters' }]) => {
 	return res.status(ResponseStatus.BAD_REQUEST).json({ statusCode: StatusCode.FAILURE, errors });
 };
 
-export const internalErrorResponse = (res, errors = [{ message: 'Internal Error' }]) => {
+export const internalErrorResponse = (res: Response, errors = [{ message: 'Internal Error' }]) => {
 	return res.status(ResponseStatus.INTERNAL_ERROR).json({ statusCode: StatusCode.FAILURE, errors });
 };
 
-export const successMsgResponse = (res, message = 'Success') => {
+export const successMsgResponse = (res: Response, message = 'Success') => {
 	return res.status(ResponseStatus.SUCCESS).json({ statusCode: StatusCode.SUCCESS, message });
 };
 
-export const failureMsgResponse = (res, errors = [{ message: 'Failed' }]) => {
+export const failureMsgResponse = (res: Response, errors = [{ message: 'Failed' }]) => {
 	return res.status(ResponseStatus.SUCCESS).json({ statusCode: StatusCode.FAILURE, errors });
 };
 
-export const successResponse = (res, data, message = 'Success') => {
+export const successResponse = (res: Response, data: any, message = 'Success') => {
 	return res.status(ResponseStatus.SUCCESS).json({ statusCode: StatusCode.SUCCESS, message, data });
 };
 
-export const createdResponse = (res, data, message = 'Created') => {
+export const createdResponse = (res: Response, data: any, message = 'Created') => {
 	return res.status(ResponseStatus.CREATED).json({ statusCode: StatusCode.SUCCESS, message, data });
 };
 
-export const accessTokenErrorResponse = (res, errors = [{ message: 'Access token invalid' }]) => {
+export const accessTokenErrorResponse = (res: Response, errors = [{ message: 'Access token invalid' }]) => {
 	res.setHeader('instruction', 'refresh_token');
 	return res.status(ResponseStatus.UNAUTHORIZED).json({ statusCode: StatusCode.INVALID_ACCESS_TOKEN, errors });
 };
 
-export const tokenRefreshResponse = (res, accessToken, refreshToken, message = 'Access token') => {
+export const tokenRefreshResponse = (res: Response, accessToken: string, refreshToken: string, message = 'Access token') => {
 	return res.status(ResponseStatus.SUCCESS).json({ statusCode: StatusCode.SUCCESS, message, accessToken, refreshToken });
 };

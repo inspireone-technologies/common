@@ -1,3 +1,4 @@
+import { Response } from 'express';
 import {
 	authFailureResponse,
 	accessTokenErrorResponse,
@@ -7,29 +8,29 @@ import {
 	forbiddenResponse
 } from './apiResponse';
 
-export const ErrorType = {
-	BAD_TOKEN: 'BadTokenError',
-	TOKEN_EXPIRED: 'TokenExpiredError',
-	UNAUTHORIZED: 'AuthFailureError',
-	ACCESS_TOKEN: 'AccessTokenError',
-	INTERNAL: 'InternalError',
-	NOT_FOUND: 'NotFoundError',
-	NO_ENTRY: 'NoEntryError',
-	NO_DATA: 'NoDataError',
-	BAD_REQUEST: 'BadRequestError',
-	FORBIDDEN: 'ForbiddenError',
-	REQUEST_VALIDATION: 'RequestValidationError'
-};
+enum ErrorType {
+	BAD_TOKEN = 'BadTokenError',
+	TOKEN_EXPIRED = 'TokenExpiredError',
+	UNAUTHORIZED = 'AuthFailureError',
+	ACCESS_TOKEN = 'AccessTokenError',
+	INTERNAL = 'InternalError',
+	NOT_FOUND = 'NotFoundError',
+	NO_ENTRY = 'NoEntryError',
+	NO_DATA = 'NoDataError',
+	BAD_REQUEST = 'BadRequestError',
+	FORBIDDEN = 'ForbiddenError',
+	REQUEST_VALIDATION = 'RequestValidationError'
+}
 
 export class ApiError extends Error {
 
-	constructor(type, message) {
+	constructor(public type: ErrorType, public message: string) {
 		super(message);
 		this.name = 'API_ERROR';
 		this.type = type;
 	}
 
-	static handle(err, res) {
+	static handle(err: any, res: Response) {
 		switch (err.type) {
 			case ErrorType.BAD_TOKEN:
 			case ErrorType.TOKEN_EXPIRED:
@@ -130,11 +131,11 @@ export class AccessTokenError extends ApiError {
 }
 
 export class RequestValidationError extends ApiError {
-	constructor(errors) {
+	constructor(public errors: any) {
 		super(ErrorType.REQUEST_VALIDATION, errors);
 	}
 	serializeErrors() {
-		return this.errors.map(err => {
+		return this.errors.map((err: any) => {
 			return { message: err.msg, field: err.param };
 		});
 	}
