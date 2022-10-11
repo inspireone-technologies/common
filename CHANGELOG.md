@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.3.0...v1.4.0) (2022-10-11)
+
+
+### Features
+
+* **sessionlocation:** simplified sessionLoaction body ([7ddd728](https://github.com/saurabhrkp-inspireOne/common/commit/7ddd7286686bebab89bc989579ff2066c517cd7a))
+
 ## [1.3.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.2.0...v1.3.0) (2022-10-11)
 
 
