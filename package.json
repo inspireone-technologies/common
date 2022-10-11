@@ -1,6 +1,6 @@
 {
   "name": "@masteroapp/common",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Common Library of middlewares and functions.",
   "main": "./dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "commit": "cz",
     "build": "npm run clean && babel src -d dist --copy-files",
     "clean": "rimraf dist",
-    "publish": "npm run build && npm publish"
+    "publish": "npm run build && npm run release && npm publish --access public"
   },
   "keywords": [],
   "author": "Saurabh Patel <saurabhpatel230@hotmail.com>",
@@ -22,7 +22,8 @@
     "@babel/core": "^7.19.3",
     "@babel/node": "^7.19.1",
     "@babel/preset-env": "^7.19.3",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.5.0"
   },
   "config": {
     "commitizen": {
