@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.13](https://github.com/saurabhrkp-inspireOne/common/compare/v1.1.12...v1.1.13) (2022-10-11)
+
+
+### Bug Fixes
+
+* moved towards typescript for function declarations ([8d09775](https://github.com/saurabhrkp-inspireOne/common/commit/8d0977555dd9e733038b352dd2a1534291cb5bcd))
+
 ### [1.1.12](https://github.com/saurabhrkp-inspireOne/common/compare/v1.1.11...v1.1.12) (2022-10-11)
 
 ### [1.1.11](https://github.com/saurabhrkp-inspireOne/common/compare/v1.1.10...v1.1.11) (2022-10-11)
