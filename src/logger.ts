@@ -31,7 +31,7 @@ const options = {
 	}
 };
 
-export default createLogger({
+export const logger = createLogger({
 	transports: [
 		new transports.Console({
 			level: logLevel,

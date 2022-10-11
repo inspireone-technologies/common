@@ -1,7 +1,7 @@
 import { promisify } from 'util';
 import { sign, verify, decode } from 'jsonwebtoken';
 import { InternalError, BadTokenError, TokenExpiredError } from './apiError';
-import logger from './logger';
+import { logger } from './logger';
 
 /*
  * issuer 		—  Software organization who issues the token.
