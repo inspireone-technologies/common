@@ -15,7 +15,7 @@ export const encode = async ({ payload, privateKey }: EncodePayload): Promise<st
 	if (!privateKey)
 		throw new InternalError('Token generation failure');
 	// @ts-ignore
-	return promisify(sign)({ ...payload }, cert, { algorithm: 'RS256' });
+	return promisify(sign)({ ...payload }, privateKey, { algorithm: 'RS256' });
 };
 
 
