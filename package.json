@@ -3,7 +3,9 @@
   "version": "1.1.7",
   "description": "Common Library of middlewares and functions.",
   "main": "./dist/index.js",
-  "packageManager": "yarn@3.2.4",
+  "files": [
+    "./dist/**/*"
+  ],
   "scripts": {
     "release": "standard-version",
     "commit": "cz",
@@ -16,15 +18,15 @@
   "license": "ISC",
   "dependencies": {
     "babel-plugin-inline-dotenv": "^1.7.0",
-    "rimraf": "^3.0.2"
+    "cz-conventional-changelog": "^3.3.0",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.5.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",
     "@babel/node": "^7.19.1",
-    "@babel/preset-env": "^7.19.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "standard-version": "^9.5.0"
+    "@babel/preset-env": "^7.19.3"
   },
   "config": {
     "commitizen": {
