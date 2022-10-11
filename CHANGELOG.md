@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.2.0...v1.3.0) (2022-10-11)
+
+
+### Features
+
+* installed required packages and type definations for packages ([67a40eb](https://github.com/saurabhrkp-inspireOne/common/commit/67a40eb958b84a481ee18af548059069c9e7c1aa))
+* **sessionlocation:** adds sessionLocation middleware for express requests ([445b9e5](https://github.com/saurabhrkp-inspireOne/common/commit/445b9e5301f9d6d70cfadd4a30cc264209accf89))
+* **validator:** adds Joi validator for requests ([2bb3a5c](https://github.com/saurabhrkp-inspireOne/common/commit/2bb3a5c6e36ceb71519d56d79a600e98a46f86bb))
+
 ## [1.2.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.1.14...v1.2.0) (2022-10-11)
 
 
