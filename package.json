@@ -2,9 +2,9 @@
   "name": "@masteroapp/common",
   "version": "1.1.11",
   "description": "Common Library of middlewares and functions.",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "files": [
-    "./dist/**/*"
+    "dist/**/*"
   ],
   "scripts": {
     "release": "standard-version",
