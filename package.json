@@ -1,0 +1,21 @@
+{
+  "name": "@masteroapp/common",
+  "version": "1.0.0",
+  "description": "Common Library of middlewares and functions.",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version",
+    "commit": "cz"
+  },
+  "keywords": [],
+  "author": "Saurabh Patel <saurabhpatel230@hotmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
