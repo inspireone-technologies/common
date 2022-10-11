@@ -9,9 +9,9 @@
   "scripts": {
     "release": "standard-version",
     "commit": "cz",
-    "build": "yarn run clean && babel src -d dist --copy-files",
+    "build": "yarn run clean && babel src -d dist",
     "clean": "rimraf dist",
-    "publishLib": "npm run build && npm run release && npm publish --access public"
+    "publishLib": "npm run build && npm run release && npm publish"
   },
   "keywords": [],
   "author": "Saurabh Patel <saurabhpatel230@hotmail.com>",
