@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.4.0...v1.4.1) (2022-10-11)
+
+
+### Bug Fixes
+
+* misspelled privateKey with cert ([1194b0e](https://github.com/saurabhrkp-inspireOne/common/commit/1194b0e6b831dad69a2fcdb8b0a09926176c86ce))
+
 ## [1.4.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.3.0...v1.4.0) (2022-10-11)
 
 
