@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.4.1...v1.4.2) (2022-10-13)
+
+
+### Bug Fixes
+
+* **eventbus:** adds nats publisher & listner for reuse ([0747911](https://github.com/saurabhrkp-inspireOne/common/commit/07479114586420ba4ea405f0db3d9d6073f7f423))
+* **events:** adds expected events subject with types defs ([981c0ac](https://github.com/saurabhrkp-inspireOne/common/commit/981c0ac8949bb05bb4a1fde222d7555412146fb4))
+* **interfaces:** adds version to all event interfaces ([9118130](https://github.com/saurabhrkp-inspireOne/common/commit/91181309351cd292734c553f48deee397d5ee2c6))
+* **nats:** adds new nats wrapper for singleton stan client ([95e52d1](https://github.com/saurabhrkp-inspireOne/common/commit/95e52d18e0be628391dd8b1dbcb8896349bc1214))
+
 ### [1.4.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.4.0...v1.4.1) (2022-10-11)
 
 
