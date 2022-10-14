@@ -6,7 +6,7 @@ import {
 	notFoundResponse,
 	badRequestResponse,
 	forbiddenResponse
-} from './apiResponse';
+} from '../responses';
 
 enum ErrorType {
 	BAD_TOKEN = 'BadTokenError',

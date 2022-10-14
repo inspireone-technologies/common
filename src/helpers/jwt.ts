@@ -1,6 +1,6 @@
 import { promisify } from 'util';
 import { sign, verify, decode } from 'jsonwebtoken';
-import { InternalError, BadTokenError, TokenExpiredError } from './apiError';
+import { InternalError, BadTokenError, TokenExpiredError } from '../errors';
 import { logger } from './logger';
 
 /*
