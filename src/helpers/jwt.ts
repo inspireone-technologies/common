@@ -28,7 +28,6 @@ export class JWT {
 		return promisify(sign)({ ...payload }, cert, { algorithm: 'RS256' });
 	}
 
-
 	/**
 	 * This method checks the token and returns the decoded data when token is valid in all respect
 	 */
@@ -43,7 +42,6 @@ export class JWT {
 			throw new BadTokenError();
 		}
 	}
-
 
 	/**
 	 * This method checks the token and returns the decoded data even when the token is expired
@@ -75,26 +73,40 @@ export class JWT {
 export class ValidationParams {
 	issuer: string;
 	audience: string;
-	subject: string;
-	constructor(issuer: string, audience: string, subject: string) {
+	userId: string;
+	constructor(issuer: string, audience: string, userId: string) {
 		this.issuer = issuer;
 		this.audience = audience;
-		this.subject = subject;
+		this.userId = userId;
 	}
+}
+
+type Payload = {
+	issuer: string,
+	audience: string,
+	userId: string,
+	username: string,
+	companyId?: string,
+	param: string,
+	validity: number
 }
 
 export class JwtPayload {
 	aud: string;
-	sub: string;
 	iss: string;
+	userId: string;
+	username: string;
+	companyId: string;
 	iat: number;
 	exp: number;
 	prm: string;
 
-	constructor(issuer: string, audience: string, subject: string, param: string, validity: number) {
+	constructor({ issuer, audience, userId, username, companyId, param, validity }: Payload) {
 		this.iss = issuer;
 		this.aud = audience;
-		this.sub = subject;
+		this.userId = userId;
+		this.username = username;
+		this.companyId = companyId || 'undefined';
 		this.iat = Math.floor(Date.now() / 1000);
 		this.exp = this.iat + (validity * 24 * 60 * 60);
 		this.prm = param;
