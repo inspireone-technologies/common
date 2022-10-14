@@ -11,67 +11,65 @@ import { logger } from './logger';
  * algorithm 	—  Encryption algorithm to be used to protect the token.
 */
 
-export const encode = async ({ payload, privateKey }: EncodePayload): Promise<string> => {
-	if (!privateKey)
-		throw new InternalError('Token generation failure');
-	// @ts-ignore
-	return promisify(sign)({ ...payload }, privateKey, { algorithm: 'RS256' });
-};
+export class JWT {
+	private publicKey: string;
+	private privateKey: string;
 
-
-/**
- * This method checks the token and returns the decoded data when token is valid in all respect
- */
-export const validate = async ({ token, validations, publicKey }: VaildatePayload): Promise<string> => {
-	try {
-		// @ts-ignore
-		return await promisify(verify)(token, publicKey, validations);
-	} catch (error: any) {
-		logger.debug(error);
-		if (error && error.name === 'TokenExpiredError') throw new TokenExpiredError();
-		throw new BadTokenError();
+	constructor(publicKey: string, privateKey: string) {
+		this.publicKey = publicKey
+		this.privateKey = privateKey
 	}
-};
 
-/**
- * This method checks the token and returns the decoded data even when the token is expired
- */
-export const decodeToken = async ({ token, validations, publicKey }: DecodeTokenPayload): Promise<JwtPayload> => {
-	try {
-		// token is verified if it was encrypted by the private key
-		// and if is still not expired then get the payload
+	async encode(payload: JwtPayload): Promise<string> {
+		const cert = this.privateKey
+		if (!cert)
+			throw new InternalError('Token generation failure');
 		// @ts-ignore
-		return <JwtPayload>await promisify(verify)(token, publicKey, validations);
-	} catch (error: any) {
-		logger.debug(error);
-		if (error && error.name === 'TokenExpiredError') {
-			// if the token has expired but was encryped by the private key
-			// then decode it to get the payload
-			return <JwtPayload>decode(token);
-		}
-		else {
-			// throws error if the token has not been encrypted by the private key
-			// or has not been issued for the user
+		return promisify(sign)({ ...payload }, cert, { algorithm: 'RS256' });
+	}
+
+
+	/**
+	 * This method checks the token and returns the decoded data when token is valid in all respect
+	 */
+	async validate(token: string, validations: ValidationParams): Promise<JwtPayload> {
+		const cert = this.publicKey
+		try {
+			// @ts-ignore
+			return <JwtPayload>await promisify(verify)(token, cert, validations);
+		} catch (error: any) {
+			logger.debug(error);
+			if (error && error.name === 'TokenExpiredError') throw new TokenExpiredError();
 			throw new BadTokenError();
 		}
 	}
-};
 
-type EncodePayload = {
-	payload: JwtPayload,
-	privateKey: string
-}
 
-type VaildatePayload = {
-	token: string,
-	validations: ValidationParams,
-	publicKey: string
-}
-
-type DecodeTokenPayload = {
-	token: string,
-	validations: ValidationParams,
-	publicKey: string
+	/**
+	 * This method checks the token and returns the decoded data even when the token is expired
+	 */
+	async decode(token: string, validations: ValidationParams): Promise<JwtPayload> {
+		const cert = this.publicKey
+		try {
+			// token is verified if it was encrypted by the private key
+			// and if is still not expired then get the payload
+			// @ts-ignore
+			return <JwtPayload>await promisify(verify)(token, cert, validations);
+		} catch (error: any) {
+			logger.debug(error);
+			if (error && error.name === 'TokenExpiredError') {
+				// if the token has expired but was encryped by the private key
+				// then decode it to get the payload
+				// @ts-ignore
+				return <JwtPayload>decode(token);
+			}
+			else {
+				// throws error if the token has not been encrypted by the private key
+				// or has not been issued for the user
+				throw new BadTokenError();
+			}
+		}
+	}
 }
 
 export class ValidationParams {
