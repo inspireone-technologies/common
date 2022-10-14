@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.6.0...v1.7.0) (2022-10-14)
+
+
+### Features
+
+* exported authentication middleware ([5110d93](https://github.com/saurabhrkp-inspireOne/common/commit/5110d930cdd98aafa35dad6135538a956ae4422c))
+
 ## [1.6.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.5.1...v1.6.0) (2022-10-14)
 
 
