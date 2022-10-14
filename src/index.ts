@@ -5,6 +5,7 @@ export * from './logger';
 export * from './sessionLocation'
 export * from './validator'
 export * from './natsWrapper'
+export * from './redisWrapper'
 export * from './eventBus/baseListener'
 export * from './eventBus/basePublisher'
 export * from './events'
