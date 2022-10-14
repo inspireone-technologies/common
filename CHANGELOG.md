@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.5.1...v1.6.0) (2022-10-14)
+
+
+### Features
+
+* **middleware:** added new authentication middleware for shared ([9a5ffde](https://github.com/saurabhrkp-inspireOne/common/commit/9a5ffde0e547990748444cdba639f7042277a80f))
+
+
+### Bug Fixes
+
+* **jwt:** refactor jwt to create class ([0f53d99](https://github.com/saurabhrkp-inspireOne/common/commit/0f53d99ea9b2b3e9e5b2659ebeb17d0cd9853612))
+* **jwt:** updated jwt payload body ([cdbce59](https://github.com/saurabhrkp-inspireOne/common/commit/cdbce59b9c886a04c6eba1bd18e98c10a75b7b52))
+* restructured files & folders in project ([361db7a](https://github.com/saurabhrkp-inspireOne/common/commit/361db7a2619c42972a3a734350835ce8d49dda15))
+
 ### [1.5.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.5.0...v1.5.1) (2022-10-14)
 
 
