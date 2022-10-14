@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.7.0...v1.8.0) (2022-10-14)
+
+
+### Features
+
+* **validator:** added req.session as ValidationSource ([4f2b75a](https://github.com/saurabhrkp-inspireOne/common/commit/4f2b75a94816454fefca9700387c37c45f9af188))
+
 ## [1.7.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.6.0...v1.7.0) (2022-10-14)
 
 
