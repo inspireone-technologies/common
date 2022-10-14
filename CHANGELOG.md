@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.5.0...v1.5.1) (2022-10-14)
+
+
+### Bug Fixes
+
+* **rediswrapper:** updated redis wrapper to promised-based connect ([f2807d7](https://github.com/saurabhrkp-inspireOne/common/commit/f2807d73bebda16f15fbd33cc2ca73463151f1da))
+
 ## [1.5.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.4.2...v1.5.0) (2022-10-14)
 
 
