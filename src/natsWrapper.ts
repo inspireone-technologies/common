@@ -1,13 +1,10 @@
 import nats, { Stan } from 'node-nats-streaming';
 
-class NatsWrapper {
+export class NatsWrapper {
   private _client?: Stan;
 
   get client() {
-    if (!this._client) {
-      throw new Error('Cannot access NATS client before connecting');
-    }
-
+    if (!this._client) throw new Error('Cannot access NATS client before connecting');
     return this._client;
   }
 
@@ -19,11 +16,7 @@ class NatsWrapper {
         console.log('Connected to NATS');
         resolve();
       });
-      this.client.on('error', (err) => {
-        reject(err);
-      });
+      this.client.on('error', (err) => reject(err));
     });
   }
 }
-
-export const natsWrapper = new NatsWrapper();
