@@ -1,7 +1,9 @@
-import { createClient, RedisClientType, RedisClientOptions } from 'redis';
+import { createClient, RedisClientOptions } from 'redis';
+
+type RedisClient = ReturnType<typeof createClient>;
 
 export class RedisWrapper {
-  private _client?: RedisClientType;
+  private _client?: RedisClient;
 
   get client() {
     if (!this._client) throw new Error('Cannot access Redis client before connecting');
@@ -9,15 +11,15 @@ export class RedisWrapper {
   }
 
   connect(config: RedisClientOptions) {
-    this._client = createClient(config);
-
     return new Promise<void>(async (resolve, reject) => {
-      await this._client!.connect()
-      this.client.on('connect', () => {
-        console.log('Connected to Redis');
-        resolve();
-      });
-      this.client.on('error', (err) => reject(err));
+      try {
+        this._client = createClient(config);
+        this._client.on('ready', () => resolve());
+        this._client.on('error', (err) => reject(err));
+        await this._client.connect()
+      } catch (error) {
+        reject(error)
+      }
     });
   }
 }
