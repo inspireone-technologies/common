@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.4.2...v1.5.0) (2022-10-14)
+
+
+### Features
+
+* exported redisWrapper class ([13b8ca8](https://github.com/saurabhrkp-inspireOne/common/commit/13b8ca83635246549307cdbc09c3ac674924f937))
+
+
+### Bug Fixes
+
+* **natswrapper:** exporting only natsWrapper class ([6cc925d](https://github.com/saurabhrkp-inspireOne/common/commit/6cc925da6b2d1c94cdcb8118e0aaff8966beb68f))
+* **rediswrapper:** added redisWrapper class for redis client ([a14e6e4](https://github.com/saurabhrkp-inspireOne/common/commit/a14e6e4bcaa5971c011ccc60d9eb94f66c191ab5))
+
 ### [1.4.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.4.1...v1.4.2) (2022-10-13)
 
 
