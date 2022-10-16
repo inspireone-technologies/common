@@ -6,7 +6,7 @@ interface Event {
   data: any;
 }
 
-export abstract class Publisher<T extends Event> {
+export class Publisher<T extends Event> {
   protected subject: T['subject'];
   protected client: Stan;
 

@@ -6,7 +6,7 @@ interface Event {
   data: any;
 }
 
-export abstract class Listener<T extends Event> {
+export class Listener<T extends Event> {
   protected subject: T['subject'];
   protected queueGroupName: string;
   protected onMessage: Function;
