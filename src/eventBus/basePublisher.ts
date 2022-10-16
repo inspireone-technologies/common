@@ -7,11 +7,12 @@ interface Event {
 }
 
 export abstract class Publisher<T extends Event> {
-  abstract subject: T['subject'];
+  protected subject: T['subject'];
   protected client: Stan;
 
-  constructor(client: Stan) {
+  constructor(client: Stan, subject: T['subject']) {
     this.client = client;
+    this.subject = subject;
   }
 
   publish(data: T['data']): Promise<void> {

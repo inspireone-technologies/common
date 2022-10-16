@@ -7,14 +7,17 @@ interface Event {
 }
 
 export abstract class Listener<T extends Event> {
-  abstract subject: T['subject'];
-  abstract queueGroupName: string;
-  abstract onMessage(data: T['data'], msg: Message): void;
+  protected subject: T['subject'];
+  protected queueGroupName: string;
+  protected onMessage: Function;
   protected client: Stan;
   protected ackWait = 5 * 1000;
 
-  constructor(client: Stan) {
+  constructor(client: Stan, queueGroupName: string, subject: T['subject'], onMessage: Function) {
     this.client = client;
+    this.queueGroupName = queueGroupName;
+    this.subject = subject;
+    this.onMessage = onMessage;
   }
 
   subscriptionOptions() {
