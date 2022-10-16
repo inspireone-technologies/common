@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.8.0...v1.9.0) (2022-10-16)
+
+
+### Features
+
+* **eventbus:** made stan as protected for accessing ([86639c8](https://github.com/saurabhrkp-inspireOne/common/commit/86639c8b5d0338bc8dcffe43c7799026a1ef90ae))
+
+
+### Bug Fixes
+
+* **eventbus:** updated event bus publisher & listener for current usage ([5a11d7e](https://github.com/saurabhrkp-inspireOne/common/commit/5a11d7e08220663ac9c1e34a9297ee482bb1cb7f))
+
 ## [1.8.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.7.0...v1.8.0) (2022-10-14)
 
 
