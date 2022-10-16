@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.9.0...v1.10.0) (2022-10-16)
+
+
+### Features
+
+* **eventbus:** converted publisher & listener to regular classess ([aa509a2](https://github.com/saurabhrkp-inspireOne/common/commit/aa509a26ca89baf823d8a97fa1b4d89d312a6425))
+
 ## [1.9.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.8.0...v1.9.0) (2022-10-16)
 
 
