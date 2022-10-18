@@ -12,30 +12,20 @@ import { logger } from './logger';
 */
 
 export class JWT {
-	private publicKey: string;
-	private privateKey: string;
-
-	constructor(publicKey: string, privateKey: string) {
-		this.publicKey = publicKey
-		this.privateKey = privateKey
-	}
-
-	async encode(payload: JwtPayload): Promise<string> {
-		const cert = this.privateKey
-		if (!cert)
+	async encode(payload: JwtPayload, privateKey: string): Promise<string> {
+		if (!privateKey)
 			throw new InternalError('Token generation failure');
 		// @ts-ignore
-		return promisify(sign)({ ...payload }, cert, { algorithm: 'RS256' });
+		return promisify(sign)({ ...payload }, privateKey, { algorithm: 'RS256' });
 	}
 
 	/**
 	 * This method checks the token and returns the decoded data when token is valid in all respect
 	 */
-	async validate(token: string, validations: ValidationParams): Promise<JwtPayload> {
-		const cert = this.publicKey
+	async validate(token: string, validations: ValidationParams, publicKey: string): Promise<JwtPayload> {
 		try {
 			// @ts-ignore
-			return <JwtPayload>await promisify(verify)(token, cert, validations);
+			return <JwtPayload>await promisify(verify)(token, publicKey, validations);
 		} catch (error: any) {
 			logger.debug(error);
 			if (error && error.name === 'TokenExpiredError') throw new TokenExpiredError();
@@ -46,13 +36,12 @@ export class JWT {
 	/**
 	 * This method checks the token and returns the decoded data even when the token is expired
 	 */
-	async decode(token: string, validations: ValidationParams): Promise<JwtPayload> {
-		const cert = this.publicKey
+	async decode(token: string, validations: ValidationParams, publicKey: string): Promise<JwtPayload> {
 		try {
 			// token is verified if it was encrypted by the private key
 			// and if is still not expired then get the payload
 			// @ts-ignore
-			return <JwtPayload>await promisify(verify)(token, cert, validations);
+			return <JwtPayload>await promisify(verify)(token, publicKey, validations);
 		} catch (error: any) {
 			logger.debug(error);
 			if (error && error.name === 'TokenExpiredError') {
