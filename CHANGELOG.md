@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.10.0...v1.11.0) (2022-10-21)
+
+
+### Features
+
+* **authentication:** updated authentication middleware to throw error on unauthenticated request ([394d4fd](https://github.com/saurabhrkp-inspireOne/common/commit/394d4fd4e19a579cc6b61887821aeb6099a03463))
+
+
+### Bug Fixes
+
+* **jwt:** updated jwt class to expect key on methods ([f91f0e8](https://github.com/saurabhrkp-inspireOne/common/commit/f91f0e851f6baae5c440c067f6762e4887b0909b))
+
 ## [1.10.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.9.0...v1.10.0) (2022-10-16)
 
 
