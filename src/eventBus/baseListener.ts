@@ -1,3 +1,4 @@
+import { logger } from './../helpers/logger';
 import { Message, Stan } from 'node-nats-streaming';
 import { Subjects } from '../events/subjects';
 
@@ -37,7 +38,7 @@ export class Listener<T extends Event> {
     );
 
     subscription.on('message', (msg: Message) => {
-      console.log(`Message received: ${this.subject} / ${this.queueGroupName}`);
+      logger.info(`Message received: ${this.subject}/${this.queueGroupName}`);
 
       const parsedData = this.parseMessage(msg);
       this.onMessage(parsedData, msg);

@@ -1,3 +1,4 @@
+import { logger } from './../helpers/logger';
 import { Stan } from 'node-nats-streaming';
 import { Subjects } from '../events/subjects';
 
@@ -19,7 +20,7 @@ export class Publisher<T extends Event> {
     return new Promise((resolve, reject) => {
       this.client.publish(this.subject, JSON.stringify(data), (err) => {
         if (err) return reject(err);
-        console.log('Event published to subject', this.subject);
+        logger.info(`Event published to subject: ${this.subject}`);
         resolve();
       });
     });
