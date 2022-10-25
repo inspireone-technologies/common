@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "cuid": "^2.1.8",
+    "express-winston": "^4.2.0",
     "fast-geoip": "^1.1.88",
     "joi": "^17.6.3",
     "jsonwebtoken": "^8.5.1",
@@ -26,6 +27,7 @@
     "redis": "^4.3.1",
     "request-ip": "^3.3.0",
     "winston": "^3.8.2",
+    "winston-aws-cloudwatch": "^3.0.0",
     "winston-daily-rotate-file": "^4.7.1"
   },
   "devDependencies": {
