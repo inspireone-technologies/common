@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.13.2...v1.14.0) (2022-10-25)
+
+
+### Features
+
+* replaced console.log with logger ([63cb87e](https://github.com/saurabhrkp-inspireOne/common/commit/63cb87e1bd7c95d2d38285488912b47898db1165))
+
 ### [1.13.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.13.1...v1.13.2) (2022-10-25)
 
 ### [1.13.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.13.0...v1.13.1) (2022-10-25)
