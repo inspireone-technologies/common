@@ -3,9 +3,9 @@ import expressWinston from 'express-winston'
 
 export const apiLogger = expressWinston.logger({
   winstonInstance: logger,
-  meta: true,
+  meta: false,
   expressFormat: true,
-  colorize: true,
+  colorize: false,
   statusLevels: true,
   skip: (req, _res) => req.method === 'OPTIONS'
 })
