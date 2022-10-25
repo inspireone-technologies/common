@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.11.0...v1.12.0) (2022-10-25)
+
+
+### Features
+
+* **logger:** added apilogger for replacement of morgan ([fe2b872](https://github.com/saurabhrkp-inspireOne/common/commit/fe2b872e0b080cdb78b72aad9d80599789d64e2f))
+* **logger:** added aws-cloudwatch logger transport for productions ([f3d9ad6](https://github.com/saurabhrkp-inspireOne/common/commit/f3d9ad69908cddd650ffd045b0b1cec3a200a326))
+
 ## [1.11.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.10.0...v1.11.0) (2022-10-21)
 
 
