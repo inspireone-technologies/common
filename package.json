@@ -18,6 +18,7 @@
   "author": "Saurabh Patel <saurabhpatel230@hotmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.195.0",
     "cuid": "^2.1.8",
     "express-winston": "^4.2.0",
     "fast-geoip": "^1.1.88",
