@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.14.0...v1.15.0) (2022-10-31)
+
+
+### Features
+
+* **apilogger:** added error logger ([3a999a2](https://github.com/saurabhrkp-inspireOne/common/commit/3a999a21b382f3dfdbfe3cbe5f20107af7939e08))
+* **logger:** removed cloudwatch from logger ([969cbe7](https://github.com/saurabhrkp-inspireOne/common/commit/969cbe73c0009d3b74edab9cb19ea86da96f2e98))
+
 ## [1.14.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.13.2...v1.14.0) (2022-10-25)
 
 
