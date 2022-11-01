@@ -12,10 +12,11 @@ if (!fs.existsSync(dir)) {
 	fs.mkdirSync(dir);
 }
 
-const logLevel = process.env.NODE_ENV === 'development' ? 'debug' : 'warn';
+const logLevel = process.env.NODE_ENV === 'production' ? 'verbose' : 'debug';
 
 const rotateOptions = {
 	level: 'error',
+	json: true,
 	filename: dir + '/%DATE%.log',
 	datePattern: 'YYYY-MM-DD',
 	zippedArchive: true,
