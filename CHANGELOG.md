@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.18.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.17.0...v1.18.0) (2022-11-10)
+
+
+### Features
+
+* **authentication:** changed from session to x-headers ([af18a47](https://github.com/saurabhrkp-inspireOne/common/commit/af18a4717d45d5b7ffb5d5f6c5756dff733d2e4b))
+
+
+### Bug Fixes
+
+* **validator:** removed validator to remove sessions from request ([dda1621](https://github.com/saurabhrkp-inspireOne/common/commit/dda16217e4932111160653c4766cb1d846d965bc))
+
 ## [1.17.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.16.0...v1.17.0) (2022-11-10)
 
 
