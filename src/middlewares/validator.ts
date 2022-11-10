@@ -9,8 +9,7 @@ export enum ValidationSource {
 	BODY = 'body',
 	HEADER = 'headers',
 	QUERY = 'query',
-	PARAM = 'params',
-	SESSION = 'session'
+	PARAM = 'params'
 };
 
 export const JoiCUID = () => Joi.string().custom((value: string, helpers: CustomHelpers) => {
