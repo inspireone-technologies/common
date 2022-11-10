@@ -2,6 +2,7 @@ export * from './errors';
 export * from './responses';
 export * from './helpers/jwt';
 export * from './helpers/logger';
+export * from './helpers/encryption'
 export * from './middlewares/apiLogger';
 export * from './middlewares/sessionLocation'
 export * from './middlewares/validator'
