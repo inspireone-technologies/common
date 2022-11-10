@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.16.0...v1.17.0) (2022-11-10)
+
+
+### Features
+
+* **encryption:** added encrypt & decrypt functions ([8fd0681](https://github.com/saurabhrkp-inspireOne/common/commit/8fd0681b4bb25a66e9e5b2f04923c3041af385a6))
+
+
+### Bug Fixes
+
+* **logger:** removed api-error logger ([97b0bd9](https://github.com/saurabhrkp-inspireOne/common/commit/97b0bd9a98510ecafc4dcd63e7bab5a772a19e77))
+
 ## [1.16.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.15.0...v1.16.0) (2022-11-01)
 
 
