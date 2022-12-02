@@ -80,6 +80,10 @@ type Payload = {
 	validity: number
 }
 
+const HOURS_IN_DAY = 24;
+const MINUTES_IN_HOUR = 60;
+const SECONDS_IN_MINUTES = 60;
+
 export class JwtPayload {
 	aud: string;
 	iss: string;
@@ -97,7 +101,7 @@ export class JwtPayload {
 		this.username = username;
 		this.companyId = companyId || 'undefined';
 		this.iat = Math.floor(Date.now() / 1000);
-		this.exp = this.iat + (validity * 24 * 60 * 60);
+		this.exp = this.iat + (validity * HOURS_IN_DAY * MINUTES_IN_HOUR * SECONDS_IN_MINUTES);
 		this.prm = param;
 	}
 }

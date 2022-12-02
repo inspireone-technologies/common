@@ -16,6 +16,7 @@ declare global {
 export const authentication = (publicKey: string) =>
   async (req: Request, res: Response, next: NextFunction) => {
     if (!req.headers['x-access-token']) throw new AuthFailureError('Unable to find access token.')
+    if (!req.headers['x-refresh-token']) throw new AuthFailureError('Unable to find refresh token.')
     if (!req.headers['x-user-id']) throw new AuthFailureError('Unable to find user Id.')
     if (!req.headers['x-user-name']) throw new AuthFailureError('Unable to find user name')
 
