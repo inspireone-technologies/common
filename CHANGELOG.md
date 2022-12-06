@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.20.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.19.0...v1.20.0) (2022-12-06)
+
+
+### Features
+
+* **joi:** export inbult joi for consistency ([6f25c64](https://github.com/saurabhrkp-inspireOne/common/commit/6f25c64ce54dec7ad49a4d8bfdc4a9ffc157bc17))
+
 ## [1.19.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.18.1...v1.19.0) (2022-12-03)
 
 
