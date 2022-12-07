@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.21.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.20.0...v1.21.0) (2022-12-07)
+
+
+### Features
+
+* **s3:** exported s3 library for calling sub commands ([017eb4d](https://github.com/saurabhrkp-inspireOne/common/commit/017eb4dffe2c6e040c36a92c6ad51586707462fa))
+
 ## [1.20.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.19.0...v1.20.0) (2022-12-06)
 
 
