@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.22.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.21.0...v1.22.0) (2022-12-10)
+
+
+### Features
+
+* **s3:** changed s3 client for s3wrapper ([e4418b4](https://github.com/saurabhrkp-inspireOne/common/commit/e4418b46c4ec4713be12ce6cfe4322465b2ff835))
+
 ## [1.21.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.20.0...v1.21.0) (2022-12-07)
 
 
