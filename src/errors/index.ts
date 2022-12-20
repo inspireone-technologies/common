@@ -5,7 +5,8 @@ import {
 	internalErrorResponse,
 	notFoundResponse,
 	badRequestResponse,
-	forbiddenResponse
+	forbiddenResponse,
+	failureMsgResponse
 } from '../responses';
 
 enum ErrorType {
@@ -53,8 +54,8 @@ export class ApiError extends Error {
 			default: {
 				let errors = err.serializeErrors();
 				// Do not send failure message in production as it may send sensitive data
-				if (process.env.NODE_ENV === 'production') errors = [{ message: 'Something wrong happened.' }];
-				return internalErrorResponse(res, errors);
+				// if (process.env.NODE_ENV === 'production') errors = [{ message: 'Something wrong happened.' }];
+				return failureMsgResponse(res, errors);
 			}
 		}
 	}

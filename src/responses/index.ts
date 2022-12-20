@@ -45,7 +45,7 @@ export const successMsgResponse = (res: Response, message = 'Success') => {
 };
 
 export const failureMsgResponse = (res: Response, errors = [{ message: 'Failed' }]) => {
-	return res.status(ResponseStatus.SUCCESS).json({ statusCode: StatusCode.FAILURE, errors });
+	return res.status(ResponseStatus.INTERNAL_ERROR).json({ statusCode: StatusCode.FAILURE, errors });
 };
 
 export const successResponse = (res: Response, data: any, message = 'Success') => {
