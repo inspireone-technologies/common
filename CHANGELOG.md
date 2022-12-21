@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.23.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.22.0...v1.23.0) (2022-12-21)
+
+
+### Features
+
+* **queue:** added bull queue to commons ([a7bbc9c](https://github.com/saurabhrkp-inspireOne/common/commit/a7bbc9c6e565df51582630a52023e7b6d678bf62))
+
+
+### Bug Fixes
+
+* **error:** updated error response ([386fb4a](https://github.com/saurabhrkp-inspireOne/common/commit/386fb4a57ff21d00a592840db74814257d1ec783))
+
 ## [1.22.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.21.0...v1.22.0) (2022-12-10)
 
 
