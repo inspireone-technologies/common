@@ -1,6 +1,7 @@
 export * from './errors';
 export * from './responses';
 export * from './helpers/jwt';
+export * from './helpers/queue';
 export * from './helpers/logger';
 export * from './helpers/encryption';
 export * from './middlewares/apiLogger';
