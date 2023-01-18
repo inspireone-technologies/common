@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.23.0...v1.24.0) (2023-01-18)
+
+
+### Features
+
+* **s3wrapper:** updated s3 wrapper to get multiple bucket at once ([24cb708](https://github.com/saurabhrkp-inspireOne/common/commit/24cb70810b8688e2b60f90c46b4180dca82fad30))
+
 ## [1.23.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.22.0...v1.23.0) (2022-12-21)
 
 
