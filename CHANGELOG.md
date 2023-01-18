@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.25.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.24.0...v1.25.0) (2023-01-18)
+
+
+### Features
+
+* **s3wrapper:** added destory method to destory all connections ([10964f8](https://github.com/saurabhrkp-inspireOne/common/commit/10964f81f05caa1b24cc8d82e83c35247239a22c))
+
 ## [1.24.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.23.0...v1.24.0) (2023-01-18)
 
 
