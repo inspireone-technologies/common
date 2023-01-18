@@ -28,4 +28,20 @@ export class s3Wrapper {
     if (!this._clients.has(bucketName)) throw new Error(`Cannot access s3 client for ${bucketName} before connecting`);
     return this._clients.get(bucketName);
   }
+
+  async destroy(buckets: Buckets) {
+    try {
+      for (const [bucketName, bucket] of Object.entries(buckets)) {
+        if (this._clients.has(bucketName)) {
+          const client = this._clients.get(bucketName);
+          if (client) {
+            client.destroy();
+            this._clients.delete(bucketName);
+          }
+        }
+      }
+    } catch (error) {
+      throw error;
+    }
+  }
 }
