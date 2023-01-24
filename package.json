@@ -12,7 +12,7 @@
     "commit": "cz",
     "build": "yarn run clean && tsc",
     "clean": "rimraf dist",
-    "publishRepo": "npm run build && npm run release && npm publish"
+    "publishRepo": "npm run build && npm run release && git push --follow-tags origin master && npm publish"
   },
   "keywords": [],
   "author": "Saurabh Patel <saurabhpatel230@hotmail.com>",
