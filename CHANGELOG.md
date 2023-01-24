@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.26.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.25.0...v1.26.0) (2023-01-24)
+
+
+### Features
+
+* **bull:** added getQueue function to get bull queue by name ([038b68e](https://github.com/saurabhrkp-inspireOne/common/commit/038b68e89c2c788c3ff4811d137fd04ae5018345))
+
 ## [1.25.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.24.0...v1.25.0) (2023-01-18)
 
 
