@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.28.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.27.0...v1.28.0) (2023-01-27)
+
+
+### Features
+
+* **package:** updated jsonwebtoken package ([f91df9e](https://github.com/saurabhrkp-inspireOne/common/commit/f91df9efb0813aedc1cfca8b0b5c4bf11706bc34))
+
 ## [1.27.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.26.2...v1.27.0) (2023-01-26)
 
 
