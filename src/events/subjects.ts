@@ -3,6 +3,7 @@ export enum Subjects {
   CompanyUpdated = 'company:updated',
   CompanyDeleted = 'company:deleted',
   CompanyReactivated = 'company:reactivated',
+  CompanyRuleUpdated = 'companyRule:updated',
   ProjectCreated = 'project:created',
   ProjectUpdated = 'project:updated',
   ProjectDeleted = 'project:deleted',
