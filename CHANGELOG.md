@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.29.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.28.1...v1.29.0) (2023-01-27)
+
+
+### Features
+
+* **events:** moved listener & publisher to events folder & updated inport for same ([79ee64a](https://github.com/saurabhrkp-inspireOne/common/commit/79ee64a46ac1b6771b78b3250a498346858bd2fd))
+* **events:** removed all events as they are to be created at service itself ([b3ff994](https://github.com/saurabhrkp-inspireOne/common/commit/b3ff994b5747e60a78bd99f2d42039836f9101e9))
+* **events:** set subject type as string, as there are many subjects, all can not be listed ([2865365](https://github.com/saurabhrkp-inspireOne/common/commit/286536588f5291cd0986b8d0dee5c7ed0a6c7d37))
+
 ### [1.28.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.28.0...v1.28.1) (2023-01-27)
 
 
