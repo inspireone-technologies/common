@@ -1,12 +1,9 @@
 import Bull, { QueueOptions, Queue } from 'bull';
-import cuid from 'cuid'
 
 const queues = new Map();
 
 export const bullQueue = (queueName: string, options: QueueOptions = {}): Queue => {
-  const jobId = cuid();
-  const queueOptions = { ...options, jobId }
-  const queue = new Bull(queueName, queueOptions);
+  const queue = new Bull(queueName, options);
   queues.set(queueName, queue);
   return queue;
 }
