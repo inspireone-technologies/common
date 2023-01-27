@@ -11,6 +11,4 @@ export * from './middlewares/authentication';
 export * from './wrappers/natsWrapper';
 export * from './wrappers/redisWrapper';
 export * from './wrappers/s3Wrapper';
-export * from './eventBus/baseListener';
-export * from './eventBus/basePublisher';
 export * from './events';
