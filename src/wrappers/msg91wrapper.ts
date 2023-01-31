@@ -7,7 +7,7 @@ export class Msg91Wrapper {
   private retry_type?: string = 'text';
   private hostname: string = 'api.msg91.com/api/'
 
-  constructor(apiKey: string, otp_length: number = 6, otp_expiry: number = 10, retry_type: string = 'text') {
+  connect(apiKey: string, otp_length: number = 6, otp_expiry: number = 10, retry_type: string = 'text') {
     this.apiKey = apiKey;
     this.otp_length = otp_length
     this.otp_expiry = otp_expiry
