@@ -7,6 +7,13 @@ export class Msg91Wrapper {
   private retry_type?: string = 'text';
   private hostname: string = 'api.msg91.com/api/'
 
+  constructor(apiKey: string, otp_length: number = 6, otp_expiry: number = 10, retry_type: string = 'text') {
+    this.apiKey = apiKey;
+    this.otp_length = otp_length
+    this.otp_expiry = otp_expiry
+    this.retry_type = retry_type
+  }
+
   /**
     * Set the OTP expiry minutes for MSG91 api call
     */
@@ -22,13 +29,6 @@ export class Msg91Wrapper {
     this.otp_length = otp_length;
     return;
   };
-
-  connect(apiKey: string, otp_length: number = 6, otp_expiry: number = 10, retry_type: string = 'voice') {
-    this.apiKey = apiKey;
-    this.otp_length = otp_length
-    this.otp_expiry = otp_expiry
-    this.retry_type = retry_type
-  }
 
   private isData(payload: any): string | null {
     if (payload) return (typeof payload === 'object' ? JSON.stringify(payload) : payload);
@@ -130,6 +130,7 @@ export class Msg91Wrapper {
   }
 
   private async makeRequest(url: RequestInfo, options: RequestInit, body: null | string): Promise<any> {
+    // @ts-ignore
     const response = await fetch(url.toString(), { method: options.method, headers: options.headers, body: body });
     return await response.json();
   }
