@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.31.0...v1.31.1) (2023-01-31)
+
+
+### Bug Fixes
+
+* **msg91:** changed node-fetch version ([697cfa8](https://github.com/saurabhrkp-inspireOne/common/commit/697cfa882b2976b111ceaed984c81a6aec3dac69))
+
 ## [1.31.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.30.0...v1.31.0) (2023-01-31)
 
 
