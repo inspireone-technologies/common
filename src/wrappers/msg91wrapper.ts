@@ -2,9 +2,9 @@ import fetch from 'node-fetch';
 
 export class Msg91Wrapper {
   private apiKey?: string;
-  private otp_length?: number = 6;
-  private otp_expiry?: number = 10;
-  private retry_type?: string = 'text';
+  private otp_length?: number;
+  private otp_expiry?: number;
+  private retry_type?: string;
   private hostname: string = 'api.msg91.com/api/'
 
   connect(apiKey: string, otp_length: number = 6, otp_expiry: number = 10, retry_type: string = 'text') {
@@ -35,38 +35,37 @@ export class Msg91Wrapper {
     return null;
   }
 
-  async sendSMS(body: any) {
+  async sendSMS(body: any = {}) {
     if (this.apiKey === undefined) throw new Error('Please provide API KEY for MSG91')
 
     body = this.isData(body);
     const path = 'v5/flow/'
     const url = `https://${this.hostname}${path}`;
-    const options: RequestInit = { method: 'POST', headers: { 'Content-Type': 'application/json', 'authkey': this?.apiKey } };
+    const options: RequestInit = { method: 'POST', headers: { 'Content-Type': 'application/json', 'authkey': this.apiKey } };
 
     const response = await this.makeRequest(url, options, body)
     return response
   };
 
-  async sendOTP(mobileNo: string, templateId: string, params: any, body: any) {
+  async sendOTP(mobileNo: string, templateId: string, params: any = {}) {
     if (this.apiKey === undefined) throw new Error('Please provide API KEY for MSG91')
 
     mobileNo = this.validateMobileNos(mobileNo);
     templateId = this.validateTemplate(templateId);
-    body = this.isData(body);
 
     if (!params['otp_length']) params['otp_length'] = this.otp_length;
     if (!params['otp_expiry']) params['otp_expiry'] = this.otp_expiry;
 
-    const urlParameters = Object.entries(params || {}).map(function (e) { e.join('='); }).join('&');
+    const urlParameters = Object.entries(params).map((e) => e.join('=')).join('&');
 
     let apiAuth = 'template_id=' + templateId + '&mobile=' + mobileNo + '&authkey=' + this.apiKey;
     if (urlParameters) apiAuth += '&' + urlParameters;
 
     const path = `v5/otp?${apiAuth}`;
     const url = `https://${this.hostname}${path}`;
-    const options: RequestInit = { method: 'GET', headers: { 'Content-Type': 'application/json', 'authkey': this?.apiKey } };
+    const options: RequestInit = { method: 'GET', headers: { 'Content-Type': 'application/json', 'authkey': this.apiKey } };
 
-    const response = await this.makeRequest(url, options, body)
+    const response = await this.makeRequest(url, options)
     return response
   };
 
@@ -76,16 +75,16 @@ export class Msg91Wrapper {
     const params = { otp: otp, otp_expiry: this.otp_expiry };
     mobileNos = this.validateMobileNos(mobileNos);
 
-    const urlParameters = Object.entries(params || {}).map(function (e) { e.join('='); }).join('&');
+    const urlParameters = Object.entries(params).map((e) => e.join('=')).join('&');
 
     let apiAuth = 'mobile=' + mobileNos + '&authkey=' + this.apiKey;
     if (urlParameters) apiAuth += '&' + urlParameters;
 
     const path = `v5/otp/verify?${apiAuth}`;
     const url = `https://${this.hostname}${path}`;
-    const options: RequestInit = { method: 'GET', headers: { 'Content-Type': 'application/json', 'authkey': this?.apiKey } };
+    const options: RequestInit = { method: 'GET', headers: { 'Content-Type': 'application/json', 'authkey': this.apiKey } };
 
-    const response = await this.makeRequest(url, options, null)
+    const response = await this.makeRequest(url, options)
     return response
   };
 
@@ -99,9 +98,9 @@ export class Msg91Wrapper {
 
     const path = `v5/otp/retry?${apiAuth}`;
     const url = `https://${this.hostname}${path}`;
-    const options: RequestInit = { method: 'GET', headers: { 'Content-Type': 'application/json', 'authkey': this?.apiKey } };
+    const options: RequestInit = { method: 'GET', headers: { 'Content-Type': 'application/json', 'authkey': this.apiKey } };
 
-    const response = await this.makeRequest(url, options, null)
+    const response = await this.makeRequest(url, options)
     return response
   };
 
@@ -112,9 +111,9 @@ export class Msg91Wrapper {
 
     const path = `v5/balance.php?${apiAuth}`;
     const url = `https://${this.hostname}${path}`;
-    const options: RequestInit = { method: 'GET', headers: { 'Content-Type': 'application/json', 'authkey': this?.apiKey } };
+    const options: RequestInit = { method: 'GET', headers: { 'Content-Type': 'application/json', 'authkey': this.apiKey } };
 
-    const response = await this.makeRequest(url, options, null)
+    const response = await this.makeRequest(url, options)
     return response
   };
 
@@ -129,7 +128,7 @@ export class Msg91Wrapper {
     return template;
   }
 
-  private async makeRequest(url: RequestInfo, options: RequestInit, body: null | string): Promise<any> {
+  private async makeRequest(url: RequestInfo, options: RequestInit, body?: BodyInit | undefined): Promise<any> {
     // @ts-ignore
     const response = await fetch(url.toString(), { method: options.method, headers: options.headers, body: body });
     return await response.json();
