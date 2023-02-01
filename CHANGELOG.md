@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.3](https://github.com/saurabhrkp-inspireOne/common/compare/v1.31.2...v1.31.3) (2023-02-01)
+
+
+### Bug Fixes
+
+* **msg91:** updated msg91 wrapper ([6b2906a](https://github.com/saurabhrkp-inspireOne/common/commit/6b2906abf82abce1200c2600ccccf6490d2b363a))
+
 ### [1.31.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.31.1...v1.31.2) (2023-01-31)
 
 
