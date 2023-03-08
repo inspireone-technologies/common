@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.32.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.31.3...v1.32.0) (2023-03-08)
+
+
+### Features
+
+* **authentication:** updated authentication middleware, removed unused declarations ([840f4d5](https://github.com/saurabhrkp-inspireOne/common/commit/840f4d5e141952fb950d389fc6279743a8fea6d2))
+
 ### [1.31.3](https://github.com/saurabhrkp-inspireOne/common/compare/v1.31.2...v1.31.3) (2023-02-01)
 
 
