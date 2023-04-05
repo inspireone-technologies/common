@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.33.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.32.0...v1.33.0) (2023-04-05)
+
+
+### Features
+
+* **get-all-queues:** adds new get all queues function ([5ecdd27](https://github.com/saurabhrkp-inspireOne/common/commit/5ecdd27d3ff54b7e3c409676deb0381091796257))
+
 ## [1.32.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.31.3...v1.32.0) (2023-03-08)
 
 
