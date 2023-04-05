@@ -12,3 +12,7 @@ export const getQueue = (queueName: string, options: QueueOptions = {}): Queue =
   if (!queues.has(queueName)) queues.set(queueName, bullQueue(queueName, options));
   return queues.get(queueName);
 }
+
+export const getAllQueues = (): Map<string, Queue> => {
+  return queues;
+}
