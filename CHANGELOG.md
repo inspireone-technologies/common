@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.33.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.33.0...v1.33.1) (2023-04-06)
+
+
+### Bug Fixes
+
+* **paginated-response:** adds new paginated-response sender ([4508dd9](https://github.com/saurabhrkp-inspireOne/common/commit/4508dd929709de8953f4c9409ea85a8931abc7e8))
+
 ## [1.33.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.32.0...v1.33.0) (2023-04-05)
 
 
