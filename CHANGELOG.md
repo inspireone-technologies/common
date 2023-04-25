@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.34.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.33.2...v1.34.0) (2023-04-25)
+
+
+### Features
+
+* **jwt:** updates jwt payload ([bfab288](https://github.com/saurabhrkp-inspireOne/common/commit/bfab288e2084d1ce1969a632edab00cf949326c9))
+
 ### [1.33.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.33.1...v1.33.2) (2023-04-25)
 
 ### [1.33.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.33.0...v1.33.1) (2023-04-06)
