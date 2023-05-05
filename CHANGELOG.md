@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.35.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.34.1...v1.35.0) (2023-05-05)
+
+
+### Features
+
+* **decodejwt:** adds decode jwt functions ([237423d](https://github.com/saurabhrkp-inspireOne/common/commit/237423d5ccf6019acaf4bbdbd32e99bb1055df41))
+
 ### [1.34.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.34.0...v1.34.1) (2023-04-25)
 
 ## [1.34.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.33.2...v1.34.0) (2023-04-25)
