@@ -61,7 +61,7 @@ export class JWT {
 	/**
 	 * This method checks the token and returns the decoded data
 	 */
-	async decodeJWT(token: string): Promise<JwtPayload> {
+	decodeJWT(token: string): JwtPayload {
 		try {
 			// token is verified if it was encrypted by the private key
 			// and if is still not expired then get the payload
