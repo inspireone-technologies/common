@@ -57,6 +57,21 @@ export class JWT {
 			}
 		}
 	}
+
+	/**
+	 * This method checks the token and returns the decoded data
+	 */
+	async decodeJWT(token: string): Promise<JwtPayload> {
+		try {
+			// token is verified if it was encrypted by the private key
+			// and if is still not expired then get the payload
+			// @ts-ignore
+			return <JwtPayload>decode(token);
+		} catch (error: any) {
+			logger.debug(error);
+			throw new BadTokenError();
+		}
+	}
 }
 
 export class ValidationParams {
