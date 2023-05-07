@@ -1,4 +1,5 @@
-import { customAlphabet, } from 'nanoid';
+// import { customAlphabet, } from 'nanoid';
+const { customAlphabet } = require('nanoid');
 
 const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 const nanoid = customAlphabet(alphabet, 19);
