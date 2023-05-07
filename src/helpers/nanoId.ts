@@ -3,7 +3,7 @@ import { customAlphabet, } from 'nanoid';
 const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 const nanoid = customAlphabet(alphabet, 19);
 
-export const prefixedNanoId = (key: keyof typeof prefixes): string => {
+export const generateId = (key: keyof typeof prefixes): string => {
   return prefixes[key] + nanoid();
 };
 
