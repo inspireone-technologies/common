@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.36.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.35.1...v1.36.0) (2023-05-07)
+
+
+### Features
+
+* **nanoid:** adds nanoid for id generation ([5618977](https://github.com/saurabhrkp-inspireOne/common/commit/561897776c25fc7f60cc943a6199b196be4fd7ee))
+* **nanoid:** adds nanoid to exports ([0a2d2df](https://github.com/saurabhrkp-inspireOne/common/commit/0a2d2df5a590836fa9d557c60ff5c327d66732a1))
+
 ### [1.35.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.35.0...v1.35.1) (2023-05-05)
 
 
