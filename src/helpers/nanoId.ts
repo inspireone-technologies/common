@@ -1,11 +1,8 @@
-// import { customAlphabet, } from 'nanoid';
-const { customAlphabet } = require('nanoid');
-
+import * as nanoid from "nanoid";
 const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-const nanoid = customAlphabet(alphabet, 19);
 
 export const generateId = (key: keyof typeof prefixes): string => {
-  return prefixes[key] + nanoid();
+  return prefixes[key] + nanoid.customAlphabet(alphabet, 19);
 };
 
 export enum prefixes {
