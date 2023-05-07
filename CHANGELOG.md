@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.36.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.36.0...v1.36.1) (2023-05-07)
+
+
+### Bug Fixes
+
+* **joi-id:** updates joi cuid validator ([51dd196](https://github.com/saurabhrkp-inspireOne/common/commit/51dd196d82fea1b4454a048031674d78cd92df4a))
+
 ## [1.36.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.35.1...v1.36.0) (2023-05-07)
 
 
