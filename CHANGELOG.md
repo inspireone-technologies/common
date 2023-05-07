@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.37.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.36.2...v1.37.0) (2023-05-07)
+
+
+### Features
+
+* **nanoid:** fixes import ([3266ae2](https://github.com/saurabhrkp-inspireOne/common/commit/3266ae265457621f2f186710edb74269d872c8f8))
+
 ### [1.36.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.36.1...v1.36.2) (2023-05-07)
 
 
