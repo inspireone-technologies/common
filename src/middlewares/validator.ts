@@ -14,7 +14,10 @@ export enum ValidationSource {
 
 export const joi = Joi;
 
-export const JoiCUID = () => Joi.string().length(25);
+export const JoiCUID = () => Joi.string().custom((value: string, helpers: CustomHelpers) => {
+	if (value.length === 25) return helpers.error('any.invalid');
+	return value;
+}, 'CUID Validation');
 
 export const validator = (schema: ObjectSchema, source: ValidationSource = ValidationSource.BODY) =>
 	(req: Request, _res: Response, next: NextFunction) => {
