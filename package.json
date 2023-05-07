@@ -25,6 +25,7 @@
     "fast-geoip": "^1.1.88",
     "joi": "17.6.3",
     "jsonwebtoken": "^8.5.1",
+    "nanoid": "^4.0.2",
     "node-fetch": "2.6.2",
     "node-nats-streaming": "^0.3.2",
     "redis": "^4.5.1",
