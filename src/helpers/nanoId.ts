@@ -1,36 +1,25 @@
-import * as nanoid from "nanoid";
-const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-
-export const generateId = (key: keyof typeof prefixes): string => {
-  return prefixes[key] + nanoid.customAlphabet(alphabet, 19);
-};
+export const tableIdPrefix = (key: keyof typeof prefixes): string => prefixes[key]
 
 export enum prefixes {
   Database = 'dbase_',
   Company = 'compy_',
-  CompanyDetails = 'comdt_',
   CompanyMapping = 'comap_',
   Project = 'projt_',
   Admin = 'adman_',
-  CompanyAdmin = 'comad_',
   AdminToken = 'admto_',
   AdminSession = 'admse_',
   AdminDevice = 'admde_',
   AdminActivity = 'admac_',
   ApiKey = 'apiky_',
   Role = 'roles_',
-  AdminRoles = 'admrl_',
   Feature = 'featr_',
-  FeatureOnCompanies = 'fecom_',
   Task = 'tasks_',
   ErrorLog = 'erlog_',
   User = 'users_',
-  UserDetail = 'userd_',
   Token = 'tokde_',
   UserSession = 'usess_',
   UserActivity = 'usact_',
   UserDevice = 'user2_',
-  UserPerformance = 'userp_',
   LogoutUser = 'logus_',
   Category = 'cates_',
   CategoryHistory = 'cathi_',
@@ -41,24 +30,16 @@ export enum prefixes {
   Question = 'qustn_',
   Answer = 'answe_',
   Skill = 'skill_',
-  MicroskillSkills = 'micss_',
-  ChallengeSkills = 'chask_',
   Context = 'conte_',
   Card = 'cards_',
   MediaResource = 'medre_',
-  SpotLight = 'spotl_',
-  UserMicroskill = 'usmic_',
   UserMicroskillHistory = 'usmih_',
-  UserMicroskillChallenge = 'usmcc_',
   UserChallengeAttempt = 'uscha_',
   UserQuestionAnswer = 'usqua_',
-  UserChallengeAttemptData = 'uscad_',
   UserSpotLightResponse = 'usspo_',
-  UserSkill = 'usesk_',
   UserFeedback = 'usfes_',
   Announcement = 'annon_',
   Repository = 'repos_',
-  UserRepository = 'usrep_',
   Form = 'forms_',
   FormQuestion = 'forqu_',
   FormAnswer = 'foran_',
@@ -70,14 +51,8 @@ export enum prefixes {
   CourseCategory = 'couca_',
   CourseType = 'cotyp_',
   Course = 'cours_',
-  FormEvent = 'forev_',
   CourseEvent = 'couev_',
-  CourseEventMicroskill = 'coums_',
   TrainingLocation = 'tralo_',
   Training = 'trais_',
-  TrainingBatch = 'traba_',
-  TrainingEvent = 'traev_',
-  BatchLearner = 'batle_',
-  Batch = 'batcs_',
-  TrainingEventAttendance = 'traat_'
+  Batch = 'batcs_'
 }
