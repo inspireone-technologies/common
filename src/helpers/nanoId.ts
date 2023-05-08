@@ -1,9 +1,10 @@
-import * as nanoid from 'nanoid';
+import { customAlphabet } from 'nanoid';
 
 const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+const nanoId = customAlphabet(alphabet, 19)
 
 export const generateId = (key: keyof typeof prefixes): string => {
-  return prefixes[key] + nanoid.customAlphabet(alphabet, 19)
+  return prefixes[key] + nanoId()
 }
 
 export enum prefixes {
