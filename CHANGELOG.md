@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.39.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.38.0...v1.39.0) (2023-05-08)
+
+
+### Features
+
+* **nanoid:** adds nanoid@3 ([a9b549e](https://github.com/saurabhrkp-inspireOne/common/commit/a9b549e3579c3244e91dbc6ecf992a39436e5722))
+
 ## [1.38.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.37.0...v1.38.0) (2023-05-08)
 
 
