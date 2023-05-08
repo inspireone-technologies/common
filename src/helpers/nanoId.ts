@@ -1,4 +1,10 @@
-export const tableIdPrefix = (key: keyof typeof prefixes): string => prefixes[key]
+import * as nanoid from 'nanoid';
+
+const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+export const generateId = (key: keyof typeof prefixes): string => {
+  return prefixes[key] + nanoid.customAlphabet(alphabet, 19)
+}
 
 export enum prefixes {
   Database = 'dbase_',
