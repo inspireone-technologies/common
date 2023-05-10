@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.41.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.40.0...v1.41.0) (2023-05-10)
+
+
+### Features
+
+* **jwt:** updates jwt payload adds first & last name with mobile ([99289a0](https://github.com/saurabhrkp-inspireOne/common/commit/99289a08c9ee981bf148380b280e5cb08c920357))
+
 ## [1.40.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.39.0...v1.40.0) (2023-05-08)
 
 
