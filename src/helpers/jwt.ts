@@ -90,6 +90,9 @@ type Payload = {
 	audience: string,
 	userId: string,
 	username: string,
+	firstName: string,
+	lastName: string,
+	mobile: string,
 	companyId?: string,
 	tokenId?: string,
 	param: string,
@@ -105,17 +108,23 @@ export class JwtPayload {
 	iss: string;
 	userId: string;
 	username: string;
+	firstName: string;
+	lastName: string;
+	mobile: string;
 	companyId: string;
 	tokenId: string;
 	iat: number;
 	exp: number;
 	prm: string;
 
-	constructor({ issuer, audience, userId, username, companyId, tokenId, param, validity }: Payload) {
+	constructor({ issuer, audience, userId, username, firstName, lastName, mobile, companyId, tokenId, param, validity }: Payload) {
 		this.iss = issuer;
 		this.aud = audience;
 		this.userId = userId;
 		this.username = username;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mobile = mobile;
 		this.companyId = companyId || 'undefined';
 		this.tokenId = tokenId || 'undefined';
 		this.iat = Math.floor(Date.now() / 1000);
