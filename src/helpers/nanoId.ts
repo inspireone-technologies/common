@@ -30,6 +30,7 @@ export enum prefixes {
   LogoutUser = 'logus_',
   Category = 'cates_',
   CategoryHistory = 'cathi_',
+  Group = 'group_',
   Microskill = 'micsk_',
   MicroskillHistory = 'mihis_',
   Challenge = 'chalg_',
