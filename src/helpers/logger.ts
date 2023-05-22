@@ -7,9 +7,10 @@ const consoleTransports = new transports.Console({
 	format: format.combine(
 		format.errors({ stack: true }),
 		format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-		format.printf(({ level, message, timestamp, stack }) => {
-			if (stack) return `${timestamp} ${level}: ${message}\n${stack}`;// Custom format for error logs
-			return `${timestamp} ${level}: ${message}`;// Default format for other logs
+		format.printf((info) => {
+			if (info.stack) return `${info.timestamp} ${info.level}: ${info.message}\n${info.stack}`; // Custom format for error logs
+			if (info.name === 'API_ERROR') return `${info.timestamp} ${info.level}: ${info.type}`; // Format for API Errors
+			return `${info.timestamp} ${info.level}: ${info.message}`; // Default format for other logs
 		})
 	)
 })
