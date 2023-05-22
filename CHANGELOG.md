@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.42.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.42.0...v1.42.1) (2023-05-22)
+
+
+### Bug Fixes
+
+* **logger:** changes logger format to also print error stack ([c652ad7](https://github.com/saurabhrkp-inspireOne/common/commit/c652ad71fb253242f502168af8a6cfe2fc7386d5))
+
 ## [1.42.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.41.0...v1.42.0) (2023-05-22)
 
 
