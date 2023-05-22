@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.42.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.41.0...v1.42.0) (2023-05-22)
+
+
+### Features
+
+* **errorlogger:** adds error logger & change apilogger transport mode to console ([f18b934](https://github.com/saurabhrkp-inspireOne/common/commit/f18b934768053c32f701d1df6f0c71f1b3bee7a5))
+* **logger:** updates winston logger, removed DailyRotateFile & used console format json ([93bcec8](https://github.com/saurabhrkp-inspireOne/common/commit/93bcec8a16b5175bfade0e0e536f0ab7a732c538))
+* **prefixes:** adds prefix for group table ([a5a3200](https://github.com/saurabhrkp-inspireOne/common/commit/a5a3200bb034ecb37b6c0d7ba5bae81c51b479ab))
+
 ## [1.41.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.40.0...v1.41.0) (2023-05-10)
 
 
