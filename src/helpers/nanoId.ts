@@ -23,7 +23,7 @@ export enum prefixes {
   Task = 'tasks_',
   ErrorLog = 'erlog_',
   User = 'users_',
-  ApiIntegrationLogs = 'apilo_',
+  ApiIntegrationLog = 'apilo_',
   Token = 'tokde_',
   UserSession = 'usess_',
   UserActivity = 'usact_',
