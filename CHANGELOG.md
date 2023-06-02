@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.44.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.44.0...v1.44.1) (2023-06-02)
+
+
+### Bug Fixes
+
+* **nanoid:** fixes model name of ApiIntegrationLog ([b1eca1e](https://github.com/saurabhrkp-inspireOne/common/commit/b1eca1e472e2e4cd664d848d1643b4b2c664a25f))
+
 ## [1.44.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.43.0...v1.44.0) (2023-06-02)
 
 
