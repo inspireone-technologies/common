@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.44.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.43.0...v1.44.0) (2023-06-02)
+
+
+### Features
+
+* **api-logger:** updates error meta body of api logger ([9346a1a](https://github.com/saurabhrkp-inspireOne/common/commit/9346a1a3ab4a1fbdc9cb9e765a929bef3186a113))
+
+
+### Bug Fixes
+
+* **nanoid:** adds ApiIntegrationLogs model for prefixes ([02c08e7](https://github.com/saurabhrkp-inspireOne/common/commit/02c08e7a32fe161585b0bc4e3ba32a9196d4e89f))
+
 ## [1.43.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.42.1...v1.43.0) (2023-05-22)
 
 
