@@ -25,13 +25,13 @@ export const errorLogger = expressWinston.errorLogger({
     format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
     format.printf(({ level, message, timestamp, meta }) => {
       const error = JSON.stringify(meta?.error);
-      const payload = JSON.stringify(meta?.payload);
+      const username = JSON.stringify(meta?.username);
       console.error({ timestamp, level, message, meta });
-      return `${timestamp} ${level}: ${message}, payload: ${payload}, error: ${error}`;
+      return `${timestamp} ${level}: ${message}, username: ${username}, error: ${error}`;
     })),
   meta: true,
   requestField: null,
   blacklistedMetaFields: ['process', 'stack', 'trace', 'os', 'message'],
-  dynamicMeta: (req, res, _err) => { return { body: req.body, payload: res.locals?.payload, sessionLocation: res.locals?.sessionLocation }; },
+  dynamicMeta: (req, res, _err) => { return { body: req.body, username: res.locals?.payload?.username, tokenId: res.locals?.payload?.tokenId, city: res.locals?.sessionLocation?.city }; },
   skip: (req, _res) => req.method === 'OPTIONS'
 })
