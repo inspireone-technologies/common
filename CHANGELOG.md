@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.45.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.44.2...v1.45.0) (2023-06-16)
+
+
+### Features
+
+* **prefixes:** adds new prefixes for new tables ([85a2600](https://github.com/saurabhrkp-inspireOne/common/commit/85a26000e0b0cc9533c0ae81900692bef3cae6c6))
+
 ### [1.44.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.44.1...v1.44.2) (2023-06-02)
 
 ### [1.44.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.44.0...v1.44.1) (2023-06-02)
