@@ -21,6 +21,7 @@ export enum prefixes {
   Role = 'roles_',
   Feature = 'featr_',
   Task = 'tasks_',
+  Log = 'logsv_',
   ErrorLog = 'erlog_',
   User = 'users_',
   ApiIntegrationLog = 'apilo_',
@@ -63,5 +64,6 @@ export enum prefixes {
   CourseEvent = 'couev_',
   TrainingLocation = 'tralo_',
   Training = 'trais_',
+  OffroleLearner = 'offro_',
   Batch = 'batcs_'
 }
