@@ -32,6 +32,6 @@ export const errorLogger = expressWinston.errorLogger({
   meta: true,
   requestField: null,
   blacklistedMetaFields: ['process', 'stack', 'trace', 'os', 'message'],
-  dynamicMeta: (req, res, _err) => { return { body: req.body, username: res.locals?.payload?.username, tokenId: res.locals?.payload?.tokenId, city: res.locals?.sessionLocation?.city }; },
+  dynamicMeta: (req, res, _err) => { return { url: req.url, body: req.body, username: res.locals?.payload?.username, tokenId: res.locals?.payload?.tokenId, city: res.locals?.sessionLocation?.city }; },
   skip: (req, _res) => req.method === 'OPTIONS'
 })
