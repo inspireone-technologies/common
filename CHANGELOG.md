@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.45.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.45.1...v1.45.2) (2023-07-04)
+
+
+### Bug Fixes
+
+* **otp-expiry:** fixes otp expiry ([03f4fa0](https://github.com/saurabhrkp-inspireOne/common/commit/03f4fa0bcdc65eafb2ece7bae4cb682bdb1d6873))
+
 ### [1.45.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.45.0...v1.45.1) (2023-07-02)
 
 

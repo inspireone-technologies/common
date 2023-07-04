@@ -1,6 +1,6 @@
 {
   "name": "@masteroapp/common",
-  "version": "1.45.1",
+  "version": "1.45.2",
   "description": "Common Library of middlewares and functions.",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
