@@ -56,6 +56,10 @@ export const paginatedResponse = (res: Response, data: any, pagination: object, 
 	return res.status(ResponseStatus.SUCCESS).json({ statusCode: StatusCode.SUCCESS, message, data, pagination });
 };
 
+export const customResponse = (res: Response, data: any, message = 'Success') => {
+	return res.status(ResponseStatus.SUCCESS).json({ statusCode: StatusCode.SUCCESS, message, ...data });
+};
+
 export const createdResponse = (res: Response, data: any, message = 'Created') => {
 	return res.status(ResponseStatus.CREATED).json({ statusCode: StatusCode.SUCCESS, message, data });
 };
