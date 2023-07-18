@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.46.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.46.0...v1.46.1) (2023-07-18)
+
+
+### Bug Fixes
+
+* **reverted-nanoid:** reverted nano id package ([06fc728](https://github.com/saurabhrkp-inspireOne/common/commit/06fc728f0305b2e3e452a55dbd32cbe09b25e33f))
+
 ## [1.46.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.45.2...v1.46.0) (2023-07-18)
 
 
