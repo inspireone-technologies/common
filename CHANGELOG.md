@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.46.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.45.2...v1.46.0) (2023-07-18)
+
+
+### Features
+
+* **customresponse:** adds new custom response ([22da73d](https://github.com/saurabhrkp-inspireOne/common/commit/22da73d884f91fb58ba42b990454da565a45ec4f))
+* **ses:** adds ses wrapper for send email ([fda0c88](https://github.com/saurabhrkp-inspireOne/common/commit/fda0c8877c6aaa8018b28246b7eebb5fc0aa0406))
+
 ### [1.45.2](https://github.com/saurabhrkp-inspireOne/common/compare/v1.45.1...v1.45.2) (2023-07-04)
 
 
