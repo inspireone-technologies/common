@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.47.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.46.1...v1.47.0) (2023-07-24)
+
+
+### Features
+
+* **ses:** fixed ses send mail with nodemailer ([1dd2ee1](https://github.com/saurabhrkp-inspireOne/common/commit/1dd2ee1234c0123108e032ad3261dadd9e5c891a))
+
 ### [1.46.1](https://github.com/saurabhrkp-inspireOne/common/compare/v1.46.0...v1.46.1) (2023-07-18)
 
 
