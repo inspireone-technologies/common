@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.48.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.47.0...v1.48.0) (2023-07-24)
+
+
+### Features
+
+* **buffer-response:** adds new reponse sender for buffer ([c97e6d4](https://github.com/saurabhrkp-inspireOne/common/commit/c97e6d40384a124ff8a67a5001d988ae849fa902))
+
 ## [1.47.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.46.1...v1.47.0) (2023-07-24)
 
 
