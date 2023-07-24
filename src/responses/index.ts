@@ -72,3 +72,10 @@ export const accessTokenErrorResponse = (res: Response, errors = [{ message: 'Ac
 export const tokenRefreshResponse = (res: Response, accessToken: string, refreshToken: string, message = 'Access token') => {
 	return res.status(ResponseStatus.SUCCESS).json({ statusCode: StatusCode.SUCCESS, message, accessToken, refreshToken });
 };
+
+export const bufferResponse = async (res: Response, fileBuffer: Buffer, fileName: string = 'Mastero_downloaded_file.xlsx', contentType: string = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') => {
+	res.setHeader('Content-Type', contentType);
+	res.setHeader('Content-Disposition', 'attachment; filename=' + fileName);
+	res.setHeader('Content-Length', fileBuffer.length);
+	return res.end(fileBuffer);
+};
