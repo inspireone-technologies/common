@@ -66,5 +66,6 @@ export enum prefixes {
   Training = 'trais_',
   OffroleLearner = 'offro_',
   Batch = 'batcs_',
-  UserHistory = 'ushis_'
+  UserHistory = 'ushis_',
+  PrivacyPolicy = 'privp_'
 }
