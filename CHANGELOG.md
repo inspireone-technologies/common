@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.49.1](https://github.com/inspireone-technologies/common/compare/v1.49.0...v1.49.1) (2024-04-02)
+
 ## [1.49.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.48.0...v1.49.0) (2023-11-04)
 
 
