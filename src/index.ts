@@ -14,4 +14,5 @@ export * from './wrappers/redisWrapper';
 export * from './wrappers/s3Wrapper';
 export * from './wrappers/sesWrapper';
 export * from './wrappers/msg91wrapper';
+export * from './wrappers/awsLambdaWrapper';
 export * from './events';

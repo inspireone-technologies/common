@@ -18,6 +18,7 @@
   "author": "Saurabh Patel <saurabhpatel230@hotmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-lambda": "^3.548.0",
     "@aws-sdk/client-s3": "^3.369.0",
     "@aws-sdk/client-ses": "^3.369.0",
     "bull": "^4.10.4",
