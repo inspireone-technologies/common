@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.49.2](https://github.com/inspireone-technologies/common/compare/v1.49.1...v1.49.2) (2024-04-06)
+
+
+### Features
+
+* **Aws Lambda & OTP:** AWS Lambda Added and OTP nanoId is added ([2dcd973](https://github.com/inspireone-technologies/common/commit/2dcd973d228777d2933971d00e805392e597a8a1))
+* **New DB id creation:** Privacy Policy table id is added ([8df64e0](https://github.com/inspireone-technologies/common/commit/8df64e08e38f0595373651299e674247cad41b72))
+
 ### [1.49.1](https://github.com/inspireone-technologies/common/compare/v1.49.0...v1.49.1) (2024-04-02)
 
 ## [1.49.0](https://github.com/saurabhrkp-inspireOne/common/compare/v1.48.0...v1.49.0) (2023-11-04)
