@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.50.0](https://github.com/inspireone-technologies/common/compare/v1.49.2...v1.50.0) (2024-04-10)
+
+
+### Features
+
+* **learner journey nano id:** added learner journey nano id ([cfc3ddb](https://github.com/inspireone-technologies/common/commit/cfc3ddb8933033d6ee128139bf77b63713c8bb79))
+
 ### [1.49.2](https://github.com/inspireone-technologies/common/compare/v1.49.1...v1.49.2) (2024-04-06)
 
 
