@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.1](https://github.com/inspireone-technologies/common/compare/v1.50.0...v1.50.1) (2024-05-22)
+
+
+### Features
+
+* **App Version NanoId:** add new nanoId gneration for app version ([3508d5a](https://github.com/inspireone-technologies/common/commit/3508d5a46e62dc26292edf180c166ac0916e6f7c))
+
 ## [1.50.0](https://github.com/inspireone-technologies/common/compare/v1.49.2...v1.50.0) (2024-04-10)
 
 
