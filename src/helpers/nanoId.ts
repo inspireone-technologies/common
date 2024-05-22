@@ -69,5 +69,6 @@ export enum prefixes {
   UserHistory = 'ushis_',
   PrivacyPolicy = 'privp_',
   Otp = 'otp_',
-  LearnerJourney = 'lejou_'
+  LearnerJourney = 'lejou_',
+  AppVersion = 'appve_',
 }
