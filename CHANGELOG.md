@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.2](https://github.com/inspireone-technologies/common/compare/v1.50.1...v1.50.2) (2024-06-25)
+
+
+### Features
+
+* **New Table ID:** New Table ID is inserted ([4d8af05](https://github.com/inspireone-technologies/common/commit/4d8af057ad1130f05580421dd857f6f7c6a83959))
+
 ### [1.50.1](https://github.com/inspireone-technologies/common/compare/v1.50.0...v1.50.1) (2024-05-22)
 
 
