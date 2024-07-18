@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.3](https://github.com/inspireone-technologies/common/compare/v1.50.2...v1.50.3) (2024-07-18)
+
+
+### Features
+
+* **User Manager is added:** Nano ID generated for user manager table ([1a6bdc6](https://github.com/inspireone-technologies/common/commit/1a6bdc609cc1980ddcca0be653a51e707ca809d6))
+
 ### [1.50.2](https://github.com/inspireone-technologies/common/compare/v1.50.1...v1.50.2) (2024-06-25)
 
 
