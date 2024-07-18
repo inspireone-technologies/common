@@ -72,4 +72,5 @@ export enum prefixes {
   LearnerJourney = 'lejou_',
   AppVersion = 'appve_',
   Manager = 'manag_',
+  UserManager = 'usman_',
 }
