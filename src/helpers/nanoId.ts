@@ -73,4 +73,6 @@ export enum prefixes {
   AppVersion = 'appve_',
   Manager = 'manag_',
   UserManager = 'usman_',
+  ManagerToken = 'matok_',
+  ManagerSession = 'mases_',
 }
