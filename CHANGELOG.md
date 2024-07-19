@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.4](https://github.com/inspireone-technologies/common/compare/v1.50.3...v1.50.4) (2024-07-19)
+
+
+### Features
+
+* **Manager Token & Manager Session:** added in id generate ([1ffb58f](https://github.com/inspireone-technologies/common/commit/1ffb58fe50d60c8592d996282ab56127290bf806))
+
 ### [1.50.3](https://github.com/inspireone-technologies/common/compare/v1.50.2...v1.50.3) (2024-07-18)
 
 
