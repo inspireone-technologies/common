@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.5](https://github.com/inspireone-technologies/common/compare/v1.50.4...v1.50.5) (2024-08-27)
+
+
+### Features
+
+* **New Table ID:** New Table ID is inserted User microskill Challenge Skill ([2d89601](https://github.com/inspireone-technologies/common/commit/2d89601caf1fc9f1259ab4fd6680349b5c6aec47))
+
 ### [1.50.4](https://github.com/inspireone-technologies/common/compare/v1.50.3...v1.50.4) (2024-07-19)
 
 
