@@ -1,11 +1,10 @@
-import fetch from 'node-fetch';
-
 export class Msg91Wrapper {
   private apiKey?: string;
   private otp_length?: number;
   private otp_expiry?: number;
   private retry_type?: string;
-  private hostname: string = 'api.msg91.com/api/'
+  private hostname: string = 'api.msg91.com/api/';
+  private fetchInstance: any = null;
 
   connect(apiKey: string, otp_length: number = 6, otp_expiry: number = 600, retry_type: string = 'text') {
     this.apiKey = apiKey;
@@ -129,6 +128,10 @@ export class Msg91Wrapper {
   }
 
   private async makeRequest(url: RequestInfo, options: RequestInit, body?: BodyInit | undefined): Promise<any> {
+    if (!this.fetchInstance) {
+      const fetchModule = await import('node-fetch');
+      this.fetchInstance = fetchModule.default || fetchModule;
+    }
     // @ts-ignore
     const response = await fetch(url.toString(), { method: options.method, headers: options.headers, body: body });
     return await response.json();

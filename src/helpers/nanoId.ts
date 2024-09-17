@@ -1,9 +1,12 @@
-import { customAlphabet } from 'nanoid';
 
 const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-const nanoId = customAlphabet(alphabet, 19)
+let nanoId: ReturnType<typeof import('nanoid')['customAlphabet']> | null = null;
 
-export const generateId = (key: keyof typeof prefixes): string => {
+export const generateId = async (key: keyof typeof prefixes): Promise<string> => {
+  if (!nanoId) {
+    const { customAlphabet } = await import('nanoid');
+    nanoId = customAlphabet(alphabet, 19);
+  }
   return prefixes[key] + nanoId()
 }
 
