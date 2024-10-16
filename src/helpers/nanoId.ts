@@ -79,4 +79,5 @@ export enum prefixes {
   ManagerToken = 'matok_',
   ManagerSession = 'mases_',
   UserMicroskillChallengeSkill = 'usmcs_',
+  UserRecentSearch = 'usres_',
 }
