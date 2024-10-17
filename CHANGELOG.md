@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.8](https://github.com/inspireone-technologies/common/compare/v1.50.7...v1.50.8) (2024-10-17)
+
+
+### Features
+
+* **New Table User Recent Search:** new nano id is generated for this table ([8c1eae3](https://github.com/inspireone-technologies/common/commit/8c1eae34000573a12f0ca78ee06541c418fbf430))
+
 ### [1.50.7](https://github.com/inspireone-technologies/common/compare/v1.50.5...v1.50.7) (2024-10-17)
 
 ### [1.50.6](https://github.com/inspireone-technologies/common/compare/v1.50.5...v1.50.6) (2024-10-17)
