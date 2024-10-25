@@ -77,4 +77,8 @@ export enum prefixes {
   ManagerSession = 'mases_',
   UserMicroskillChallengeSkill = 'usmcs_',
   UserRecentSearches = 'usres_',
+  BulletInDeliveryRecord = 'buidr_',
+  UserBulletInAnalytics = 'ubuan_',
+  UserBulletIn = 'ubulin_',
+  BulletIn = 'bulin_',
 }
