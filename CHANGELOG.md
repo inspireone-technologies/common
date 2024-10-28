@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.11](https://github.com/inspireone-technologies/common/compare/v1.50.10...v1.50.11) (2024-10-28)
+
+
+### Features
+
+* **Nano Id Generation:** BulletIn Table Id is added ([68fe133](https://github.com/inspireone-technologies/common/commit/68fe1339fd56fbe4ce5dcd48871e3a2efe7775b5))
+* **Report Templates table id:** ReportTemplate table id generation is added ([50b54d3](https://github.com/inspireone-technologies/common/commit/50b54d3946c843c7f05f3fb7061e4a7d259c01ca))
+
 ### [1.50.10](https://github.com/inspireone-technologies/common/compare/v1.50.9...v1.50.10) (2024-10-25)
 
 ### [1.50.9](https://github.com/inspireone-technologies/common/compare/v1.50.8...v1.50.9) (2024-10-17)
