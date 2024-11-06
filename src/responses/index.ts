@@ -16,7 +16,8 @@ export const ResponseStatus = {
 	UNAUTHORIZED: 401,
 	FORBIDDEN: 403,
 	NOT_FOUND: 404,
-	INTERNAL_ERROR: 500
+	INTERNAL_ERROR: 500,
+	MULTI_STATUS: 207
 };
 
 export const authFailureResponse = (res: Response, errors = [{ message: 'Authentication Failure' }]) => {
@@ -79,3 +80,7 @@ export const bufferResponse = async (res: Response, fileBuffer: Buffer, fileName
 	res.setHeader('Content-Length', fileBuffer.length);
 	return res.end(fileBuffer);
 };
+
+export const multiStatusResponse = async(res: Response, errors=[{message:'Validation errors'}]) => {
+	return res.status(ResponseStatus.MULTI_STATUS).json({statusCode: StatusCode.SUCCESS, errors});
+}
