@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.12](https://github.com/inspireone-technologies/common/compare/v1.50.11...v1.50.12) (2024-11-06)
+
+
+### Features
+
+* **Multi status Response:** Multi Status Response is added ([eec9ae2](https://github.com/inspireone-technologies/common/commit/eec9ae2269b4b637292ac7745dfec2954e7d7b03))
+
 ### [1.50.11](https://github.com/inspireone-technologies/common/compare/v1.50.10...v1.50.11) (2024-10-28)
 
 
