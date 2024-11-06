@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.13](https://github.com/inspireone-technologies/common/compare/v1.50.12...v1.50.13) (2024-11-06)
+
+
+### Bug Fixes
+
+* **Multi Status Reponse:** Message is also include in it ([708af10](https://github.com/inspireone-technologies/common/commit/708af10f57830a06617423c27e15f990eb2dfeb0))
+
 ### [1.50.12](https://github.com/inspireone-technologies/common/compare/v1.50.11...v1.50.12) (2024-11-06)
 
 
