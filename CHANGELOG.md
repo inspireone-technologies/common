@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.50.14](https://github.com/inspireone-technologies/common/compare/v1.50.13...v1.50.14) (2024-11-25)
+
+
+### Features
+
+* **Custom Report table:** new table id generated is added ([8dc7474](https://github.com/inspireone-technologies/common/commit/8dc7474fb663c777b0856b5d46c973510817a9cb))
+
 ### [1.50.13](https://github.com/inspireone-technologies/common/compare/v1.50.12...v1.50.13) (2024-11-06)
 
 
