@@ -81,5 +81,6 @@ export enum prefixes {
   UserBulletInAnalytics = 'ubuan_',
   UserBulletIn = 'ubulin_',
   BulletIn = 'bulin_',
-  ReportTemplates = 'reptm_'
+  ReportTemplates = 'reptm_',
+  CustomReportsSchedular = 'crsch_'
 }
