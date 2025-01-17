@@ -81,6 +81,6 @@ export const bufferResponse = async (res: Response, fileBuffer: Buffer, fileName
 	return res.end(fileBuffer);
 };
 
-export const multiStatusResponse = async(res: Response, message: string, errors=[{message:'Validation errors'}]) => {
-	return res.status(ResponseStatus.MULTI_STATUS).json({statusCode: StatusCode.SUCCESS, message, errors});
+export const multiStatusResponse = async(res: Response, data:Array<{status:number, message:string, [key:string]:any}>=[]) => {
+	return res.status(ResponseStatus.MULTI_STATUS).json(data);
 }

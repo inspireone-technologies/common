@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 
 export class Msg91Wrapper {
   private apiKey?: string;
@@ -128,9 +127,9 @@ export class Msg91Wrapper {
     return template;
   }
 
-  private async makeRequest(url: RequestInfo, options: RequestInit, body?: BodyInit | undefined): Promise<any> {
-    // @ts-ignore
-    const response = await fetch(url.toString(), { method: options.method, headers: options.headers, body: body });
+  private async makeRequest(url: RequestInfo, options: RequestInit, body?: BodyInit): Promise<any> {
+    const fetch = (await import('node-fetch')).default;
+    const response = await fetch(url.toString(), { ...options, body: body?.toString() });
     return await response.json();
   }
 

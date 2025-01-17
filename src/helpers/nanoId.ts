@@ -1,10 +1,14 @@
-import { customAlphabet } from 'nanoid';
+import { isEmpty } from 'lodash';
 
 const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-const nanoId = customAlphabet(alphabet, 19)
+let customAlphabet: any = null;
 
-export const generateId = (key: keyof typeof prefixes): string => {
-  return prefixes[key] + nanoId()
+export const generateId = async (key: keyof typeof prefixes): Promise<string> => {
+  if (isEmpty(customAlphabet)) {
+    customAlphabet = (await (import('nanoid'))).customAlphabet;
+  }
+  const nanoIdGenerator = customAlphabet(alphabet, 19);
+  return prefixes[key] + nanoIdGenerator();
 }
 
 export enum prefixes {

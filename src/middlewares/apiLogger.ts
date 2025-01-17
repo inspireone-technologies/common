@@ -1,5 +1,11 @@
 import { transports, format } from 'winston';
-import expressWinston from 'express-winston'
+import expressWinston from 'express-winston';
+
+interface Meta {
+  error?: any,
+  username?: any,
+  [key: string]: any
+}
 
 export const apiLogger = expressWinston.logger({
   transports: [new transports.Console()],
@@ -23,7 +29,13 @@ export const errorLogger = expressWinston.errorLogger({
   format: format.combine(
     format.errors({ stack: true }),
     format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-    format.printf(({ level, message, timestamp, meta }) => {
+    format.printf((info) => {
+      const { level, message, timestamp, meta } = info as {
+        level: string,
+        message: string,
+        timestamp: string,
+        meta: Meta
+      };
       const error = JSON.stringify(meta?.error);
       const username = JSON.stringify(meta?.username);
       console.error({ timestamp, level, message, meta });
