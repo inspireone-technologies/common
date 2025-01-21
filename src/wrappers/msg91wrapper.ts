@@ -1,3 +1,4 @@
+import axios, { AxiosRequestConfig } from 'axios';
 
 export class Msg91Wrapper {
   private apiKey?: string;
@@ -128,9 +129,25 @@ export class Msg91Wrapper {
   }
 
   private async makeRequest(url: RequestInfo, options: RequestInit, body?: BodyInit): Promise<any> {
-    const fetch = (await import('node-fetch')).default;
-    const response = await fetch(url.toString(), { ...options, body: body?.toString() });
-    return await response.json();
+    // const fetch = (await import('node-fetch')).default;
+    // const response = await fetch(url.toString(), { ...options, body: body?.toString() });
+    // return await response.json();
+
+    // Convert url to string if it's a Request object
+    const urlString = url.toString();
+
+    // Prepare axios configuration object
+    const axiosConfig: AxiosRequestConfig = {
+      method: options.method as any, // Cast to any as RequestInit method is not a valid type for axios
+      url: urlString,
+      headers: options.headers as Record<string, string>, // Ensure headers are typed correctly
+      data: body ? body.toString() : undefined, // If body is provided, convert to string
+    };
+
+    // Make the request with axios
+    const response = await axios(axiosConfig);
+
+    return response.data;
   }
 
 }
