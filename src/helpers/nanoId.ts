@@ -83,5 +83,9 @@ export enum prefixes {
   BulletIn = 'bulin_',
   ReportTemplates = 'reptm_',
   CustomReportsSchedular = 'crsch_',
-  RepositoryAnalytics = 'repan_'
+  RepositoryAnalytics = 'repan_',
+  Reward = 'rwd_',
+  RewardCategory = 'rwcat_',
+  RewardContent = 'rwcnt_',
+  RewardHistory = 'rwhist_'
 }
