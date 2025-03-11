@@ -12,11 +12,11 @@ import { logger } from './logger';
 */
 
 export class JWT {
-	async encode(payload: JwtPayload, privateKey: string): Promise<string> {
+	async encode(payload: JwtPayload, privateKey: string, allowInsecureKeySizes: boolean = true, allowInvalidAsymmetricKeyTypes: boolean = true): Promise<string> {
 		if (!privateKey)
 			throw new InternalError('Token generation failure');
 		// @ts-ignore
-		return promisify(sign)({ ...payload }, privateKey, { algorithm: 'RS256' });
+		return promisify(sign)({ ...payload }, privateKey, { algorithm: 'RS256', allowInsecureKeySizes, allowInvalidAsymmetricKeyTypes });
 	}
 
 	/**
