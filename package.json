@@ -1,6 +1,6 @@
 {
   "name": "@masteroapp/common",
-  "version": "1.51.6",
+  "version": "1.51.7",
   "description": "Common Library of middlewares and functions.",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,17 +12,17 @@
     "commit": "cz",
     "build": "yarn run clean && tsc",
     "clean": "rimraf dist",
-    "publishRepo": "npm run build && git push --follow-tags origin master && npm publish --tag beta"
+    "publishRepo": "npm run build && npm run release && npm publish --tag beta"
   },
   "keywords": [],
   "author": "Saurabh Patel <saurabhpatel230@hotmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@aws-sdk/client-lambda": "^3.758.0",
-    "@aws-sdk/client-s3": "^3.758.0",
-    "@aws-sdk/client-ses": "^3.758.0",
+    "@aws-sdk/client-lambda": "^3.782.0",
+    "@aws-sdk/client-s3": "^3.782.0",
+    "@aws-sdk/client-ses": "^3.782.0",
     "@paralleldrive/cuid2": "^2.2.2",
-    "axios": "^1.8.2",
+    "axios": "^1.8.4",
     "bull": "^4.16.5",
     "express-winston": "^4.2.0",
     "fast-geoip": "^1.1.88",
@@ -36,9 +36,9 @@
     "winston": "^3.17.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0",
+    "@types/express": "^5.0.1",
     "@types/jsonwebtoken": "^9.0.9",
-    "@types/node": "^22.13.10",
+    "@types/node": "^22.14.0",
     "@types/node-fetch": "^2.6.12",
     "@types/nodemailer": "^6.4.17",
     "@types/request-ip": "^0.0.41",
