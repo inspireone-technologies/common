@@ -84,5 +84,11 @@ export enum prefixes {
   Reward = 'rwd_',
   RewardCategory = 'rwcat_',
   RewardContent = 'rwcnt_',
-  RewardHistory = 'rwhist_'
+  RewardHistory = 'rwhist_',
+  CompanyWalletHistory = 'cwlhist_',
+  Vouchers = 'vchr_',
+  VouchersCountries = 'vchrcntry_',
+  PlumOrderLog = 'plmordlog_',
+  UserVouchersDetails = 'usrvchrdtl_',
+  ReportLogs = 'rlog_'
 }
