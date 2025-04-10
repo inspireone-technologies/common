@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.51.9](https://github.com/inspireone-technologies/common/compare/v1.51.8...v1.51.9) (2025-04-10)
+
 ### [1.51.8](https://github.com/inspireone-technologies/common/compare/v1.51.7...v1.51.8) (2025-04-10)
 
 ### [1.51.7](https://github.com/inspireone-technologies/common/compare/v1.51.6...v1.51.7) (2025-04-04)
