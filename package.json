@@ -1,6 +1,6 @@
 {
   "name": "@masteroapp/common",
-  "version": "1.51.9",
+  "version": "2.1.0",
   "description": "Common Library of middlewares and functions.",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,7 +12,7 @@
     "commit": "cz",
     "build": "yarn run clean && tsc",
     "clean": "rimraf dist",
-    "publishRepo": "npm run build && npm run release --release-as 2.1.0"
+    "publishRepo": "npm run build && npm run release -- --release-as 2.1.0"
   },
   "keywords": [],
   "author": "Saurabh Patel <saurabhpatel230@hotmail.com>",
