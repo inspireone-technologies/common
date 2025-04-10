@@ -1,10 +1,7 @@
-import { customAlphabet } from 'nanoid';
-
-const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-const nanoId = customAlphabet(alphabet, 19)
+import { createId as cuid } from '@paralleldrive/cuid2';
 
 export const generateId = (key: keyof typeof prefixes): string => {
-  return prefixes[key] + nanoId()
+  return prefixes[key] + cuid().slice(0, 19)
 }
 
 export enum prefixes {
@@ -87,5 +84,11 @@ export enum prefixes {
   Reward = 'rwd_',
   RewardCategory = 'rwcat_',
   RewardContent = 'rwcnt_',
-  RewardHistory = 'rwhist_'
+  RewardHistory = 'rwhist_',
+  CompanyWalletHistory = 'cwlhist_',
+  Vouchers = 'vchr_',
+  VouchersCountries = 'vchrcntry_',
+  PlumOrderLog = 'plmordlog_',
+  UserVouchersDetails = 'usrvchrdtl_',
+  ReportLogs = 'rlog_'
 }

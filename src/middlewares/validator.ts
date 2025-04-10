@@ -1,5 +1,4 @@
 import Joi, { CustomHelpers, ObjectSchema } from 'joi';
-import cuid from 'cuid';
 
 import { logger } from '../helpers/logger';
 import { BadRequestError } from '../errors';
