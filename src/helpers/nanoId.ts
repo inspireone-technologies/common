@@ -92,4 +92,9 @@ export enum prefixes {
   UserVouchersDetails = 'usrvchrdtl_',
   ReportLogs = 'rlog_',
   Nanoskill = 'nanos_',
+  NanoskillQuestion = 'nsques_',
+  NanoskillAnswer = 'nsans_',
+  NanoskillCard = 'nscard_',
+  UserNanoskillAttempt = 'usrnsatt_',
+  UserNanoskillQuestionAnswer = 'usrnsqa_',
 }
