@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/inspireone-technologies/common/compare/v2.1.2...v2.2.0) (2025-05-12)
+
+
+### Features
+
+* nanoskill related table id creation ([5724517](https://github.com/inspireone-technologies/common/commit/5724517b76a629b2391239232518c6ea4794ec22))
+
 ### [2.1.2](https://github.com/inspireone-technologies/common/compare/v2.1.1...v2.1.2) (2025-04-30)
 
 ### [2.1.1](https://github.com/inspireone-technologies/common/compare/v2.1.0...v2.1.1) (2025-04-11)
