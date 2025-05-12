@@ -90,5 +90,6 @@ export enum prefixes {
   VouchersCountries = 'vchrcntry_',
   PlumOrderLog = 'plmordlog_',
   UserVouchersDetails = 'usrvchrdtl_',
-  ReportLogs = 'rlog_'
+  ReportLogs = 'rlog_',
+  Nanoskill = 'nanos_',
 }
